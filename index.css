@@ -1,0 +1,943 @@
+h2 {
+  color: rgb(68, 68, 68);
+  font-size: 24px;
+  text-align: center;
+}
+
+#caurl {
+  width: 100%;
+}
+
+hr {
+  margin-top: -0.01%;
+}
+
+#moretext {
+  display: none;
+}
+
+/* First Div */
+#IstCategory {
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin-top: 2%;
+  gap: 1%;
+}
+
+#IstCategory img {
+  width: 100%;
+}
+
+/* Bank Offer Div */
+#bankoffer {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  margin-top: 2%;
+}
+
+#bankoffer div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1%;
+}
+
+#bankoffer img {
+  text-align: center;
+  max-width: 415%;
+  height: auto;
+  vertical-align: middle;
+  margin: auto;
+}
+
+#bankoffer img:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  cursor: pointer;
+}
+
+#bankoffer div div {
+  border: 0.2px solid rgb(221, 218, 218);
+}
+
+#bankoffer div div:hover {
+  border: none;
+}
+
+/* Top offers */
+
+#topoffers {
+  width: 70%;
+  margin: auto;
+  margin-top: 2%;
+}
+
+#topoffers div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1%;
+}
+
+#topoffers img {
+  max-width: 415%;
+}
+
+#topoffers img:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  cursor: pointer;
+}
+
+#topoffers div div {
+  border: 0.2px solid rgb(221, 218, 218);
+}
+
+#topoffers div div:hover {
+  border: none;
+}
+/* Fruits and Vegetables*/
+
+#fruitsvegetables {
+  width: 70%;
+  margin: auto;
+  margin-top: 2%;
+}
+
+#fruitsvegetables div {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1%;
+}
+
+#fruitsvegetables img {
+  width: 630%;
+}
+
+#fruitsvegetables img:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  cursor: pointer;
+}
+
+#fruitsvegetables div div {
+  border: 0.2px solid rgb(221, 218, 218);
+}
+
+#fruitsvegetables div div:hover {
+  border: none;
+}
+
+/* Dailystaples*/
+
+#dailystaple {
+  width: 70%;
+  margin: auto;
+  margin-top: 2.5%;
+}
+
+#dailystaple div {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1%;
+}
+
+#dailystaple img {
+  width: 630%;
+}
+
+#dailystaple img:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  cursor: pointer;
+}
+
+#dailystaple div div {
+  border: 0.2px solid rgb(221, 218, 218);
+}
+
+#dailystaple div div:hover {
+  border: none;
+}
+
+/* Beverages*/
+
+#beverages {
+  width: 70%;
+  margin: auto;
+  margin-top: 2%;
+}
+
+#beverages div {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1%;
+}
+
+#beverages img {
+  width: 630%;
+}
+
+#beverages img:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  cursor: pointer;
+}
+
+#beverages div div {
+  border: 0.2px solid rgb(221, 218, 218);
+}
+
+#beverages div div:hover {
+  border: none;
+}
+
+/* Snacks Store */
+
+#snacks {
+  width: 70%;
+  margin: auto;
+  margin-top: 2%;
+}
+
+#snacks div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1%;
+}
+
+#snacks img {
+  max-width: 412%;
+}
+
+#snacks img:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  cursor: pointer;
+}
+
+#snacks div div {
+  border: 0.2px solid rgb(221, 218, 218);
+}
+
+#snacks div div:hover {
+  border: none;
+}
+
+/* Cleaning & Household */
+
+#cleaning {
+  width: 70%;
+  margin: auto;
+  margin-top: 2%;
+}
+
+#cleaning div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1%;
+}
+
+#cleaning img {
+  max-width: 412%;
+}
+
+#cleaning img:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  cursor: pointer;
+}
+
+#cleaning div div {
+  border: 0.2px solid rgb(221, 218, 218);
+}
+
+#cleaning div div:hover {
+  border: none;
+}
+
+/* Beauty and Hygiene*/
+
+#beauty {
+  width: 70%;
+  margin: auto;
+  margin-top: 2.5%;
+}
+
+#beauty div {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1%;
+}
+
+#beauty img {
+  width: 630%;
+}
+
+#beauty img:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  cursor: pointer;
+}
+
+#beauty div div {
+  border: 0.2px solid rgb(221, 218, 218);
+}
+
+#beauty div div:hover {
+  border: none;
+}
+
+/* Home and Kitchen*/
+
+#home {
+  width: 70%;
+  margin: auto;
+  margin-top: 2.5%;
+}
+
+#home div {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1%;
+}
+
+#home img {
+  width: 630%;
+}
+
+#home img:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  cursor: pointer;
+}
+
+#home div div {
+  border: 0.2px solid rgb(221, 218, 218);
+}
+
+#home div div:hover {
+  border: none;
+}
+
+/* Slider */
+#slider {
+  width: 70%;
+  margin: auto;
+  margin-top: 2%;
+  border: 0.2px solid rgb(221, 218, 218);
+}
+
+/* Brand and Store */
+
+#brand {
+  width: 70%;
+  margin: auto;
+  margin-top: 2.5%;
+}
+
+#brand div {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1%;
+}
+
+#brand img {
+  width: 630%;
+}
+
+#brand img:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  cursor: pointer;
+}
+
+#brand div div {
+  border: 0.2px solid rgb(221, 218, 218);
+}
+
+#brand div div:hover {
+  border: none;
+}
+
+/* Big Image */
+
+#bigimg {
+  width: 70%;
+  margin: auto;
+  margin-top: 2%;
+}
+
+#bigimg img {
+  width: 100%;
+}
+
+/* Content Boz*/
+#cotentbox {
+  width: 70%;
+  margin: auto;
+  margin-top: 2%;
+  border: 0.2px solid rgb(221, 218, 218);
+  padding: 0% 1%;
+}
+
+#contentbox h1 {
+  margin: 1% 0%;
+}
+
+@media screen and (max-width: 992px) {
+  /* First Div */
+  #IstCategory {
+    width: 75%;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 4%;
+    gap: 2%;
+  }
+
+  #IstCategory div:nth-child(5) {
+    display: none;
+  }
+  #IstCategory div:nth-child(6) {
+    display: none;
+  }
+
+  /* Bank Offer */
+  #bankoffer {
+    width: 75%;
+    margin-top: 5%;
+  }
+
+  #bankoffer div {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2%;
+  }
+  #bankoffer img {
+    text-align: center;
+    max-width: 312%;
+  }
+
+  /* Top Offers */
+  #topoffers {
+    width: 75%;
+    margin-top: 5%;
+  }
+
+  #topoffers div {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2%;
+  }
+  #topoffers img {
+    text-align: center;
+    max-width: 312%;
+  }
+
+  /* Fruits and Vegetables */
+  #fruitsvegetables {
+    width: 75%;
+    margin-top: 5%;
+  }
+
+  #fruitsvegetables div {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5%;
+  }
+
+  #fruitsvegetables img {
+    width: 420%;
+  }
+
+  #fruitsvegetables div div:nth-child(5) {
+    display: none;
+  }
+
+  #fruitsvegetables div div:nth-child(6) {
+    display: none;
+  }
+
+  /* Dailystaples*/
+
+  #dailystaple {
+    width: 75%;
+    margin-top: 4%;
+  }
+
+  #dailystaple div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5%;
+  }
+
+  #dailystaple img {
+    width: 420%;
+  }
+
+  #dailystaple div div:nth-child(5) {
+    display: none;
+  }
+
+  #dailystaple div div:nth-child(6) {
+    display: none;
+  }
+
+  /* Beverages*/
+
+  #beverages {
+    width: 75%;
+    margin-top: 4%;
+  }
+
+  #beverages div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5%;
+  }
+
+  #beverages img {
+    width: 420%;
+  }
+
+  #beverages div div:nth-child(5) {
+    display: none;
+  }
+
+  #beverages div div:nth-child(6) {
+    display: none;
+  }
+
+  /* Snacks Store */
+  #snacks {
+    width: 75%;
+    margin-top: 5%;
+  }
+
+  #snacks div {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2%;
+  }
+  #snacks img {
+    text-align: center;
+    max-width: 312%;
+  }
+
+  /* Cleaning */
+
+  #cleaning {
+    width: 75%;
+    margin-top: 5%;
+  }
+
+  #cleaning div {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2%;
+  }
+  #cleaning img {
+    text-align: center;
+    max-width: 312%;
+  }
+
+  /* beauty*/
+
+  #beauty {
+    width: 75%;
+    margin-top: 4%;
+  }
+
+  #beauty div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5%;
+  }
+
+  #beauty img {
+    width: 420%;
+  }
+
+  #beauty div div:nth-child(5) {
+    display: none;
+  }
+
+  #beauty div div:nth-child(6) {
+    display: none;
+  }
+
+  /* home*/
+
+  #home {
+    width: 75%;
+    margin-top: 4%;
+  }
+
+  #home div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5%;
+  }
+
+  #home img {
+    width: 420%;
+  }
+
+  #home div div:nth-child(5) {
+    display: none;
+  }
+
+  #home div div:nth-child(6) {
+    display: none;
+  }
+
+  /* Slider */
+  #slider {
+    width: 75%;
+    margin-top: 4%;
+  }
+
+  /* brand*/
+
+  #brand {
+    width: 75%;
+    margin-top: 4%;
+  }
+
+  #brand div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5%;
+  }
+
+  #brand img {
+    width: 420%;
+  }
+
+  #brand div div:nth-child(5) {
+    display: none;
+  }
+
+  #brand div div:nth-child(6) {
+    display: none;
+  }
+
+  /* Big Image */
+
+  #bigimg {
+    width: 75%;
+    margin-top: 4%;
+  }
+
+  /* Content Boz*/
+  #cotentbox {
+    width: 75%;
+    margin-top: 4%;
+  }
+
+  #contentbox h1 {
+    margin: 1% 0%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* First Div */
+  #IstCategory {
+    width: 95%;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 4%;
+    gap: 4%;
+  }
+
+  #IstCategory div:nth-child(4) {
+    display: none;
+  }
+
+  /* Bank Offer */
+  #bankoffer {
+    width: 90%;
+    margin-top: 5%;
+  }
+
+  #bankoffer div {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3%;
+  }
+  #bankoffer img {
+    text-align: center;
+    max-width: 207%;
+  }
+
+  /* Top Offer */
+  #topoffers {
+    width: 90%;
+    margin-top: 8%;
+  }
+
+  #topoffers div {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3%;
+  }
+  #topoffers img {
+    text-align: center;
+    max-width: 207%;
+  }
+
+  /* Fruits and Vegetables */
+  #fruitsvegetables {
+    width: 95%;
+    margin-top: 8%;
+  }
+
+  #fruitsvegetables div {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5%;
+  }
+
+  #fruitsvegetables img {
+    width: 305%;
+  }
+
+  #fruitsvegetables div div:nth-child(4) {
+    display: none;
+  }
+
+  /* dailystaple */
+  #dailystaple {
+    width: 95%;
+    margin-top: 5%;
+  }
+
+  #dailystaple div {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5%;
+  }
+
+  #dailystaple img {
+    width: 305%;
+  }
+
+  #dailystaple div div:nth-child(4) {
+    display: none;
+  }
+
+  /* Beverages */
+  #beverages {
+    width: 95%;
+    margin-top: 5%;
+  }
+
+  #beverages div {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5%;
+  }
+
+  #beverages img {
+    width: 305%;
+  }
+
+  #beverages div div:nth-child(4) {
+    display: none;
+  }
+
+  /* Snacks */
+  #snacks {
+    width: 95%;
+    margin-top: 4%;
+  }
+
+  #snacks div {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3%;
+  }
+  #snacks img {
+    text-align: center;
+    max-width: 205%;
+  }
+
+  /* Cleaning */
+  #cleaning {
+    width: 90%;
+    margin-top: 8%;
+  }
+
+  #cleaning div {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3%;
+  }
+  #cleaning img {
+    text-align: center;
+    max-width: 207%;
+  }
+
+  /* Beauty */
+  #beauty {
+    width: 95%;
+    margin-top: 5%;
+  }
+
+  #beauty div {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5%;
+  }
+
+  #beauty img {
+    width: 305%;
+  }
+
+  #beauty div div:nth-child(4) {
+    display: none;
+  }
+
+  /* Home */
+  #home {
+    width: 95%;
+    margin-top: 5%;
+  }
+
+  #home div {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5%;
+  }
+
+  #home img {
+    width: 305%;
+  }
+
+  #home div div:nth-child(4) {
+    display: none;
+  }
+
+  /* brand */
+  #brand {
+    width: 95%;
+    margin-top: 5%;
+  }
+
+  #brand div {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5%;
+  }
+
+  #brand img {
+    width: 305%;
+  }
+
+  #brand div div:nth-child(4) {
+    display: none;
+  }
+
+  /* Slider */
+  #slider {
+    width: 95%;
+  }
+
+  /* Big Image */
+
+  #bigimg {
+    width: 95%;
+  }
+
+  /* Content Boz*/
+  #cotentbox {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+    /* First Div */
+    #IstCategory {
+      width: 95%;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 4%;
+      gap: 2%;
+    }
+  
+    #IstCategory div:nth-child(3) {
+      display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+/* Fruits & Vegetables */
+#fruitsvegetables div {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.8%;
+}
+
+#fruitsvegetables img {
+  width: 200%;
+}
+
+#fruitsvegetables div div:nth-child(3) {
+  display: none;
+}
+
+/* Daily Staple */
+
+#dailystaple div {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.8%;
+}
+
+#dailystaple img {
+  width: 200%;
+}
+
+#dailystaple div div:nth-child(3) {
+  display: none;
+}
+
+/* Beverages */
+
+#beverages div {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.8%;
+}
+
+#beverages img {
+  width: 200%;
+}
+
+#beverages div div:nth-child(3) {
+  display: none;
+}
+
+/* Beauty */
+#beauty div {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.8%;
+}
+
+#beauty img {
+  width: 200%;
+}
+
+#beauty div div:nth-child(3) {
+  display: none;
+}
+
+/* Home */
+#home div {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.8%;
+}
+
+#home img {
+  width: 200%;
+}
+
+#home div div:nth-child(3) {
+  display: none;
+}
+
+/* brand */
+#brand div {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.8%;
+}
+
+#brand img {
+  width: 200%;
+}
+
+#brand div div:nth-child(3) {
+  display: none;
+}
+}
