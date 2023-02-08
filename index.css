@@ -840,104 +840,103 @@ hr {
 }
 
 @media screen and (max-width: 600px) {
-    /* First Div */
-    #IstCategory {
-      width: 95%;
-      grid-template-columns: repeat(2, 1fr);
-      margin-top: 4%;
-      gap: 2%;
-    }
-  
-    #IstCategory div:nth-child(3) {
-      display: none;
-    }
+  /* First Div */
+  #IstCategory {
+    width: 95%;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 4%;
+    gap: 2%;
+  }
+
+  #IstCategory div:nth-child(3) {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 500px) {
+  /* Fruits & Vegetables */
+  #fruitsvegetables div {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.8%;
+  }
 
-/* Fruits & Vegetables */
-#fruitsvegetables div {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.8%;
-}
+  #fruitsvegetables img {
+    width: 200%;
+  }
 
-#fruitsvegetables img {
-  width: 200%;
-}
+  #fruitsvegetables div div:nth-child(3) {
+    display: none;
+  }
 
-#fruitsvegetables div div:nth-child(3) {
-  display: none;
-}
+  /* Daily Staple */
 
-/* Daily Staple */
+  #dailystaple div {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.8%;
+  }
 
-#dailystaple div {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.8%;
-}
+  #dailystaple img {
+    width: 200%;
+  }
 
-#dailystaple img {
-  width: 200%;
-}
+  #dailystaple div div:nth-child(3) {
+    display: none;
+  }
 
-#dailystaple div div:nth-child(3) {
-  display: none;
-}
+  /* Beverages */
 
-/* Beverages */
+  #beverages div {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.8%;
+  }
 
-#beverages div {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.8%;
-}
+  #beverages img {
+    width: 200%;
+  }
 
-#beverages img {
-  width: 200%;
-}
+  #beverages div div:nth-child(3) {
+    display: none;
+  }
 
-#beverages div div:nth-child(3) {
-  display: none;
-}
+  /* Beauty */
+  #beauty div {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.8%;
+  }
 
-/* Beauty */
-#beauty div {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.8%;
-}
+  #beauty img {
+    width: 200%;
+  }
 
-#beauty img {
-  width: 200%;
-}
+  #beauty div div:nth-child(3) {
+    display: none;
+  }
 
-#beauty div div:nth-child(3) {
-  display: none;
-}
+  /* Home */
+  #home div {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.8%;
+  }
 
-/* Home */
-#home div {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.8%;
-}
+  #home img {
+    width: 200%;
+  }
 
-#home img {
-  width: 200%;
-}
+  #home div div:nth-child(3) {
+    display: none;
+  }
 
-#home div div:nth-child(3) {
-  display: none;
-}
+  /* brand */
+  #brand div {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.8%;
+  }
 
-/* brand */
-#brand div {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.8%;
-}
+  #brand img {
+    width: 200%;
+  }
 
-#brand img {
-  width: 200%;
-}
-
-#brand div div:nth-child(3) {
-  display: none;
-}
+  #brand div div:nth-child(3) {
+    display: none;
+  }
 }
