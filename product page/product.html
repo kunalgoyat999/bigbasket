@@ -17,14 +17,15 @@
         <hr />
         <h5>Fruits & Vegetable</h5>
         <p>Exotic Fruits & Veggies</p>
-        <p>Exotic Fruits</p>
+        <p id="greenp">Exotic Fruits</p>
         <p>Exotic Vegetables</p>
       </div>
       <br />
       <div id="lowerpart">
         <h4>Brands</h4>
         <hr />
-        <h5>Fresho</h5>
+        <p>Fresho</p>
+        <p>BRU Ground Coffee</p>
       </div>
     </div>
     <div class="vl"></div>
@@ -32,20 +33,22 @@
       <img src="https://www.bigbasket.com/media/uploads/p/l/40099244_1-fresho-strawberry-organically-grown.jpg">
     </div>
     <div id="rightdiv">
-      <div id="contentbox">
-        <h3>Fresho Strawberry, 200 g</h3>
-        <p> MRP: <span> Rs 185</span></p>
-        <p>Price: <span>Rs 147</span></p>
-        <p> You Save: <span>21%</span></p>
-        <p>(Inclusive of all taxes)</p>
-        <p>
-          <sapn id="ratings">4.2<i class="fa-solid fa-star"></i></sapn> <span> 5772 Ratings & 101 Reviews </span></span>
-        </p>
-        <div>
-          <p id="count"> 1</p>
-          <button> Add to Basket</button>
-        </div>
-
+      <h1>Fresho Strawberry, 200 g</h1>
+      <p id="mrp"> MRP: <span> Rs 185</span></p>
+      <p id="price">Price: <span>Rs 147</span></p>
+      <p id="save"> You Save: <span>21%</span></p>
+      <p id="taxes">(Inclusive of all taxes)</p>
+      <p id="ratingreviews">
+        <sapn id="ratings">4.2<i class="fa-solid fa-star"></i></sapn> <span> 5772 Ratings & 101 Reviews </span></span>
+      </p>
+      <div id="basket">
+        <p id="count"> 1</p>
+        <button onclick="addtoBasket()"> Add to Basket</button>
+      </div>
+      <div id="increasequant">
+        <p id="countdec"> -</p>
+        <p id="quant">1</p>
+        <p id="countinc"> +</p>
       </div>
     </div>
   </div>
@@ -53,11 +56,38 @@
 
 </html>
 <script>
-  localStorage.setItem("local", "Buy fresho country");
-  document.title = localStorage.getItem("local");
+  function addtoBasket() {
+    var btn = document.getElementById("basket")
+    btn.style.display = "none"
 
+    var show = document.getElementById("increasequant")
+    show.style.display = "flex"
+  }
 
-  
+  document.getElementById("countinc").addEventListener("click", inccount)
 
+  function inccount() {
+    var val = document.getElementById("quant").textContent
+    val = Number(val) + 1;
+    document.getElementById("quant").textContent = val
+  }
+
+  document.getElementById("countdec").addEventListener("click", deccount)
+
+  function deccount() {
+    var val = document.getElementById("quant").textContent
+    val = Number(val) - 1;
+
+    if (val !== 0) {
+      document.getElementById("quant").textContent = val
+    } else {
+      var btn = document.getElementById("basket")
+      btn.style.display = "inline"
+
+      var show = document.getElementById("increasequant")
+      show.style.display = "none"
+    }
+
+  }
 </script>
 <script src="https://kit.fontawesome.com/bd6b389e1a.js" crossorigin="anonymous"></script>
