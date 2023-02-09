@@ -1,0 +1,191 @@
+#productbody {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* Left Div */
+#leftdiv {
+  width: 20%;
+  margin-right: 7px;
+}
+h4 {
+  font-size: 1.6rem;
+}
+
+hr {
+  border: 0.5px solid rgb(223, 223, 223);
+}
+
+#upprpart h4 {
+  margin-bottom: -1%;
+  color: rgba(34, 34, 34, 0.87);
+  border-bottom: 2px solid #84c225;
+  display: inline-block;
+}
+#upprpart h5 {
+  font-size: 1rem;
+  color: #676768;
+  text-indent: 5px;
+}
+
+#upprpart p {
+  color: #676768;
+  font-size: 0.8rem;
+  text-indent: 15px;
+  margin-top: -1%;
+}
+
+#upprpart #greenp {
+  color: #096;
+}
+
+#lowerpart h4 {
+  margin-bottom: -1%;
+  color: rgba(34, 34, 34, 0.87);
+  border-bottom: 2px solid #84c225;
+  display: inline-block;
+}
+#lowerpart p {
+  color: #676768;
+  font-size: 0.8rem;
+  text-indent: 15px;
+}
+
+/* Middle Line */
+.vl {
+  height: 500px;
+  border-left: 1px solid rgb(223, 223, 223);
+}
+
+/* Product Image */
+#imgdiv img {
+  width: 100%;
+}
+
+/* Right Div */
+#rightdiv {
+  margin-left: 2%;
+}
+
+#rightdiv h1{
+ font-size: 1.8rem;
+}
+
+#mrp{
+  font-size: .8rem;
+  color: #8f8f8f;
+  margin: -0.1% 0%;
+}
+
+#mrp span{
+  text-decoration: line-through;
+}
+
+#price{
+  font-size: 1.2rem;
+  color: #222;
+  margin: -0.2% 0%;
+}
+
+#save{
+  color: #ba5252;
+  font-size: 0.8rem;
+  margin: -0.1% 0%;
+}
+
+#taxes{
+  color: #8f8f8f;
+  font-size: 0.7rem;
+  margin: -0.1% 0%;
+}
+
+#ratingreviews{
+  margin-top: 10%;
+}
+
+#ratingreviews span:last-child{
+  color: rgb(74, 74, 74);
+  font-size: 1rem;
+}
+#ratings {
+  font-size: 13px;
+  color: rgb(104, 159, 56);
+  background-color: rgb(227, 235, 218);
+  padding: 4px;
+}
+
+#count {
+  display: inline;
+  border: 1px solid #c8c8c8;
+  border-radius: 3px;
+  color: #666;
+  padding: 8px 12px;
+}
+
+#increasequant{
+  display: flex;
+  justify-content: left;
+}
+
+#countinc {
+  display: inline;
+  border: 1px solid #c8c8c8;
+  border-radius: 3px;
+  color: #666;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+#countdec {
+  display: inline;
+  border: 1px solid #c8c8c8;
+  border-radius: 3px;
+  color: #666;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+#quant{
+  margin: auto 4%;
+}
+
+#increasequant{
+  display:none;
+}
+#rightdiv button {
+  background-color: #84c225;
+  padding: 11px 30px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+/* Removes the default 20px margin and creates some padding space for the indicators and controls */
+.carousel {
+  margin-bottom: 0;
+  padding: 0 40px 30px 40px;
+}
+/* Reposition the controls slightly */
+.carousel-control {
+  left: -12px;
+}
+.carousel-control.right {
+  right: -12px;
+}
+/* Changes the position of the indicators */
+.carousel-indicators {
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the colour of the indicators */
+.carousel-indicators li {
+  background: #c0c0c0;
+}
+.carousel-indicators .active {
+  background: #333333;
+}

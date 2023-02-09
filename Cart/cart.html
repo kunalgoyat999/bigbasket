@@ -1,0 +1,586 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles/index.css">
+    <style>
+        #footer {
+            background-color: black !important;
+            color: white !important;
+            width: 100% !important;
+            margin-left: 0% !important;
+            padding-left: 5% !important;
+            padding-right: 5% !important;
+        }
+
+        #products {
+            margin: 1% 5% 10% 5%;
+            /* border: 1px solid black; */
+            /* height: 600px; */
+            display: grid;
+            grid-template-columns: 80%;
+            grid-gap: 1%;
+            justify-content: center;
+        }
+
+        #products div {
+            box-shadow: rgb(96 96 96/ 16%) 4px 4px 4px 4px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, var(--bg-opacity));
+            height: 100px;
+        }
+
+        #products div img {
+            height: 80%;
+            margin-left: 2%;
+            margin-top: 1%;
+            border: 1px solid gainsboro;
+            border-radius: 10px;
+            float: left;
+        }
+
+        #products div p {
+            font-size: large;
+            /* margin-top: 10%; */
+
+        }
+
+        .productPri {
+            margin-left: 90%;
+            font-weight: bolder;
+            margin-top: -2%;
+        }
+
+        .productNam {
+            color: purple;
+            margin-left: 25%;
+            margin-top: 4%;
+        }
+
+        #checkout {
+            box-shadow: rgb(96 96 96/ 16%) 4px 4px 4px 4px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, var(--bg-opacity));
+            height: 100px;
+            background-color: black;
+            color: white;
+            width: 80%;
+            margin: auto;
+            padding: 1%;
+        }
+
+        #savings {
+            color: rgb(190, 190, 190);
+            margin-left: 1%;
+
+        }
+
+        #cos {
+            margin-left: 1%;
+            font-weight: bolder;
+            font-size: larger;
+        }
+
+        .ckbutton {
+            float: right;
+            width: 20%;
+            height: 40%;
+            margin-top: -2%;
+            background-color: green;
+            color: white;
+            border-radius: 5px;
+            /* border: 1px solid green; */
+        }
+
+        #checkout input {
+            margin-top: 1%;
+            margin-left: 1%;
+        }
+
+        #prodN {
+            margin: 5% 15% 0% 15%;
+            height: 24px;
+            width: 70%;
+            /* background-color: red; */
+            font-size: larger;
+            font-weight: bold;
+        }
+
+        .leftPrice {
+            float: right;
+            margin-top: -2%;
+            margin-right: 5%;
+        }
+
+        /* css for overlay */
+        #cont {
+            width: 300px;
+            height: 400px;
+            background-color: white;
+            border: 1px solid;
+            padding: 2%;
+            margin: auto;
+            margin-top: 5%;
+            box-shadow: rgb(96 96 96/ 16%) 4px 4px 4px 4px;
+        }
+
+        #cont h2 {
+            color: #84c225;
+            font-size: 16px;
+            text-align: center;
+            line-height: 19px;
+            font-weight: 600;
+        }
+
+        #cont input {
+            background-color: transparent;
+            border: none;
+            margin-top: 20%;
+            margin-bottom: 30%;
+            color: gray;
+            width: 90%;
+            margin-left: 5%;
+            height: 10%;
+            border-bottom: 1px solid gray;
+        }
+
+        #cont button {
+            margin-top: 5%;
+            width: 90%;
+            margin-left: 5%;
+            height: 10%;
+            border-bottom: 1px solid gray;
+            border-radius: 5px;
+            font-weight: bolder;
+
+        }
+
+        #login {
+            background-color: white;
+            border: 1px solid black;
+        }
+
+        #continue {
+            border: none;
+            background-color: #84c225;
+            color: white;
+        }
+
+        #cont p {
+            margin-top: 5%;
+            font-size: x-small;
+            width: 90%;
+            margin-left: 5%;
+        }
+        /* #overlay1 {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 2;
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        #overlay2 {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 2;
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.5);
+        } */
+        /* css for verify mobile number */
+        #cont2 {
+            width: 300px;
+            height: 400px;
+            background-color: white;
+            border: 1px solid;
+            padding: 2%;
+            margin: auto;
+            margin-top: 5%;
+            box-shadow: rgb(96 96 96/ 16%) 4px 4px 4px 4px;
+
+        }
+
+        #cont2 h2 {
+            color: #84c225;
+            font-size: 16px;
+            text-align: center;
+            line-height: 19px;
+            font-weight: 600;
+        }
+
+        #cont2 input {
+            background-color: transparent;
+            border: none;
+            margin-top: 20%;
+            margin-bottom: 30%;
+            color: gray;
+            width: 90%;
+            height: 10%;
+            border-bottom: 1px dashed;
+        }
+
+        #resend {
+            width: 24%;
+            margin-left: 38%;
+            font-size: x-small;
+            background-color: white;
+            /* border: 1px solid black; */
+        }
+
+        #continue2 {
+            margin-top: 5%;
+            margin-left: 5%;
+            width: 90%;
+            height: 10%;
+            border-bottom: 1px solid gray;
+            border-radius: 5px;
+            font-weight: bolder;
+            /* border: none; */
+            background-color: #84c225;
+            color: white;
+        }
+
+        #cont2 p {
+            /* font-size: small; */
+            text-align: center;
+        }
+        #lnk {
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div id="overlay1">
+        <div id="cont">
+            <h2>LOGIN/SIGN UP</h2>
+            <input id="mobileNum" type="text" placeholder="Enter Mobile Number (10-digit)">
+            <button id="login">Login using email Address</button>
+            <br>
+            <button id="continue">Continue</button>
+            <p>By continuing, I accept Bigbasket's Term and Conditions and Privacy Policy.</p>
+        </div>
+    </div>
+    <div id="overlay2">
+        <div id="cont2">
+            <h2>Verify Mobile Number</h2>
+            <p>Please check the OTP sent to your mobile number</p>
+            <p id="mbl"></p>
+            <input id="otp" type="text" placeholder="Enter OTP">
+            <button id="resend">Resend OTP</button>
+            <br>
+            <button id="continue2">Verify and Continue</button>
+        </div>
+    </div> -->
+    <!-- <div id="bodyyy">
+        <div id="heading">
+            <img src="Images/bigbasket_logo.png">
+            <div id="heading_main1">
+                <p id="login">Login|Sign Up</p>
+                <p>📍56004, Bangalore</p>
+                <p>📞1860 123 1000</p>
+            </div>
+            <div id="heading_main2">
+                <input type="search" id="search_bar" placeholder="Search for Products..">
+                <img id="search_img" src="Images/Search_image.png">
+                <a href="cart.html" id="lnk">
+                    <div id="my_basket">
+                        <img src="Images/shopping-basket.png">
+                        <span>
+                            <p>My Basket</p>
+                            <br>
+                            <p id="bask">0 Items</p>
+                        </span>
+                    </div>
+                </a>
+
+            </div>
+            <div id="dropdown_list">
+                <a href="#">Shop by Category</a>
+                <div id="drop1">
+                    <a href="#">Fruits and Vegetables</a>
+                    <a href="#">Food Grains Oils and Masalas</a>
+                    <a href="#">Bakery, Cakes and Diaries</a>
+                    <a href="#">Beverages</a>
+                    <a href="#">Snacks and Branded Foods</a>
+                    <a href="#">Beauty and Hygiene</a>
+                    <a href="#">Cleaning and Household</a>
+                    <a href="#">Kitchen, Garden and Pets</a>
+                    <a href="#">Eggs, Meat and Fish</a>
+                    <a href="#">Gourment and World Food</a>
+                    <a href="#">Baby Care</a>
+                    <a href="#">View All</a>
+                </div>
+            </div>
+            <div id="offers">
+                <p>🏷️ Offers</p>
+            </div>
+        </div>
+        <h1 style="text-align: center;margin: 2%;">My cart</h1>
+        <div id="checkout"></div>
+        <div id="prodN">
+            <p class="rightName">Product Name</p>
+            <p class="leftPrice">Price</p>
+        </div>
+        <div id="products"></div>
+        <div id="footer">
+            <div id="footer1">
+                <div class="inside_footer1">
+                    <span>BigBasket</span>
+                    <ul type="none">
+                        <li>About Us</li>
+                        <li>In News</li>
+                        <li>Green Basket</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms and Conditions</li>
+                        <li>Careers At Bigbasket</li>
+                        <li>bb Instant</li>
+                        <li>bb Daily</li>
+                    </ul>
+                </div>
+                <div class="inside_footer1">
+                    <span>Help</span>
+                    <ul type="none">
+                        <li>FAQs</li>
+                        <li>Contact Us</li>
+                        <li>bb Wallet FAQs</li>
+                        <li>bb Wallet T&Cs</li>
+                        <li>Vendor Connect</li>
+                        <li>E-Invoice Compliance for bigbasket vendors</li>
+                    </ul>
+                </div>
+                <div class="inside_footer1">
+                    <span>Download Our App</span>
+                    <ul type="none">
+
+                        <img width="50%" src="Images/both.png">
+                    </ul>
+                </div>
+                <div class="inside_footer1">
+                    <span>Get Social With Us</span>
+                    <img width="170vw" src="Images/sociall.png">
+                </div>
+            </div>
+            <hr color="lightgrey">
+            <div id="footer2">
+
+
+                <p><span>POPULAR CATEGORIES:</span>&nbsp &nbsp Sunflower Oils, Wheat Atta, Ghee, Milk, Health Drinks,
+                    Flakes, Organic F&V, Namkeen, Eggs, Floor Cleaners, Other Juices, Leafy Vegetables, Frozen Veg Food,
+                    Diapers & Wipes</p>
+                <p><span>POPULAR BRANDS:</span>&nbsp &nbsp Fresho, bb Royal, Nandini, Kelloggs, 24 Mantra, Saffola,
+                    Lizol,
+                    Safal, Horlicks, MTR, Fresho Meats, Whisper , Real, Milky Mist, Nivea, Himalaya, Comfort, Sunpure ,
+                    Bru
+                    , Zespri,</p>
+                <p><span>CITIES WE SERVE:</span>&nbsp &nbsp
+                    
+                    Bangalore,Hyderabad,Mumbai,Pune,Chennai,Delhi,Mysore,Madurai,Coimbatore,Vijayawada-Guntur,Kolkata,Ahmedabad-Gandhinagar,Nashik Business,Lucknow-Kanpur,Gurgaon,Vadodara,Visakhapatnam,Surat,Nagpur,Patna,Indore,Chandigarh Tricity,Jaipur,Bhopal,Noida-Ghaziabad,Kochi,Krishna District,Bhubaneshwar-Cuttack,Guwahati,Renigunta,Hubli,Davanagere,Trichy,Amravati,Raipur,Rajkot,Gwalior,Bareilly,Allahabad,Hyderabad Rural,Bangalore Rural,Chennai Rural,Vizag Rural,Lucknow Rural,Noida Rural,Ahmedabad Rural,Bhopal Rural,Bhubaneswar Rural,Coimbatore Rural,Chandigarh Rural,Gurugram Rural,Guwahati Rural,Indore Rural,Kochi Rural,Kolkata Rural,Mumbai Rural,Mysore Rural,Nagpur Rural,Patna Rural,Pune Rural,Surat Rural,Vadodara Rural,Jaipur Rural,Ranchi,Nashik,Agra,Kozhikode, </p>
+                <p><span>PAYMENT OPTIONS:</span>&nbsp &nbsp
+                    <img width="100vw" src="Images/cod.jpg">
+                    <img width="100vw" src="Images/visa.png">
+                    <img width="100vw" src="Images/mastercard.png">
+                    <img width="100vw" src="Images/paytm.png">
+                    <img width="100vw" src="Images/mobi.png">
+                    <img width="100vw" src="Images/rupay.png">
+                    <img width="100vw" src="Images/american.png">
+                </p>
+            </div>
+
+
+        </div>
+    </div>
+
+    
+
+</body>
+
+<script>
+    var randOtp = Math. floor(1000 + Math. random() * 9000);
+    //login page
+    let continueLogin = document.getElementById("continue");
+    continueLogin.onclick = function(){
+        let mobiile = document.getElementById("mobileNum");
+        if (mobiile.value.length == 10){
+            document.getElementById("overlay1").style.display = "none";
+            document.getElementById("overlay2").style.display = "block";
+            console.log(randOtp);
+            
+        } else {
+            alert("Enter 10 digit mobile number");
+            mobiile.value= "";
+        }
+        
+    };
+
+    var verify = document.getElementById("continue2");
+    verify.onclick = function() {
+        let otpInput = document.getElementById("otp");
+        if (otpInput.value == randOtp){
+            document.getElementById("overlay2").style.display = "none";
+            alert("Welcome back");
+        } else {
+            alert("Invalid OTP");
+            otpInput.value = "";
+        }
+    }
+    
+    
+
+
+    // 1. get the data from localstorage
+
+    let parent = document.getElementById("products")
+
+    let cart = JSON.parse(localStorage.getItem("cart"));
+    // console.log("cart");
+    let alimul = document.getElementById("bask");
+    alimul.innerText = cart.length + " Items";
+    function showProducts() {
+
+        cart.forEach(function (product) {
+            // console.log(product.name);
+
+
+            let div = document.createElement("div");
+
+            let img = document.createElement("img");
+            img.src = product.img;
+
+            let product_price = document.createElement("p");
+            product_price.textContent = "₹" + product.price;
+
+            let product_name = document.createElement("p");
+            product_name.setAttribute("class", "productNam")
+            product_price.setAttribute("class", "productPri")
+            product_name.textContent = product.name;
+
+
+
+            div.append(img, product_name, product_price,);
+
+            parent.append(div);
+
+        });
+
+    };
+
+
+    let totalAmount = 0;
+    let totalItems = 0;
+    for (var i = 0; i < cart.length; i++) {
+        totalAmount = totalAmount + Number(cart[i].price);
+        totalItems++;
+    }
+
+    var sum = document.getElementById("checkout");
+    let ite = document.createElement("p");
+    ite.setAttribute("id", "cos")
+    ite.innerText = "Subtotal (" + totalItems + " items): ₹" + Math.floor(totalAmount);
+    let am = document.createElement("p");
+    am.setAttribute("id", "savings")
+    am.innerText = "Savings: ₹" + totalAmount * 0.25;
+
+    // let pr = document.createElement("p");
+    // pr.innerText = "Enter Promo-code";
+
+    let promo = document.createElement("input");
+    promo.placeholder = "Enter Promo-code";
+
+    let final = document.createElement("button");
+    final.innerText = "Validate";
+
+    final.addEventListener("click", updateValue)
+
+    let ckbtn = document.createElement("button");
+    ckbtn.innerText = "Checkout";
+    ckbtn.setAttribute("class", "ckbutton");
+    ckbtn.addEventListener("click", succ)
+
+    var ght = 0;
+
+    function updateValue() {
+        var promoCode = promo.value;
+        if (ght === 0 && promoCode == "Bigbasket30") {
+            totalAmount = 0.70 * totalAmount;
+            alert("Congrats you have got 30% discount.")
+            promo.style.color = "green";
+            // promo.value = "Promocode Applied!!";
+            final.innerText = "Applied";
+            ght++;
+        } else if (promoCode != "Bigbasket30") {
+            alert("Invalid Promocode. Try again!");
+            promo.value = "";
+        }
+        ite.innerText = "Subtotal (" + totalItems + " items): ₹" + Math.floor(totalAmount);
+
+
+    }
+    sum.append(ite, am, promo, final, ckbtn);
+
+    showProducts();
+
+    function succ() {
+        window.location.href = "makePayment.html";
+    }
+
+
+</script>
+
+</html> -->
+
+<div class="containertnc"
+        style="max-width:1000px; width:100%; float: left; margin:0 auto; font-family:Gotham,  'Helvetica Neue', Helvetica, Arial, sans-serif;">
+        <div class="wraper">
+            <div class="page-title">
+                <h2 style="font-size:40px; margin-top: 20px; margin-left:28px; color: red; ">
+                    FAQ</h2>
+            </div>
+            <div class="tnc">
+                <h4 style="font-size:18px; margin-top:10px; margin-left:27px;">
+                    How much are the delivery charges for an order on bigbasket, bb Express or Meat Express?</h4>
+                <ol
+                    style="    font-size: 15px; margin-left:4%; margin-top:10px; color:#424040; margin-bottom:17px; line-height:23px;">
+                    <li style="list-style-type: initial;">
+                        For any order value below INR 250, a delivery fee of INR 50 will be applied. For any order value
+                        between INR 251 and INR 600, a delivery fee of INR 30 will be applied. All orders above INR 600
+                        will not incur any delivery charge.</li>
+                </ol>
+            </div>
+            <div class="tnc">
+                <h4 style="font-size:18px; margin-top:10px; margin-left:27px;">
+                    How much are the delivery charges for an order on bbnow?</h4>
+                <ol
+                    style="    font-size: 15px; margin-left:4%; margin-top:10px; color:#424040; margin-bottom:17px; line-height:23px;">
+                    <li style="list-style-type: initial;">
+                        Delivery charges will be applied for bbnow orders based on various factors such as order value,
+                        time of day, weather etc.</li>
+                </ol>
+            </div><!--tnc-->
+            <div class="tnc" style="float:left; padding: 0 13px; margin-top:26px; margin-left: 16px;">
+                <h4 style="margin-bottom:3px !important; font-size:18px; line-height: 22px;">
+                    If I forgot some items &amp; added them as a separate order but it is getting delivered to me in the
+                    same slot as the others, will I get charged separately?</h4>
+                <ol style="padding:5px 0 !important; list-style:none; font-size:15px;">
+                    <li style="line-height: 22px; color:#424040;">
+                        In case the additional items order is scheduled in the same morning or evening slot as the one
+                        placed before, this is an add-on order with no additional delivery charge. It will have a
+                        separate bill but get delivered along with the previous order placed.</li>
+                </ol>
+            </div><!--tnc--><br><br>
+            <h4 style="padding-left:29px;"><a href="https://www.bigbasket.com/faq/?source=app">More FAQ</a></h4>
+        </div>
+    </div>
