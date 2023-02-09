@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.bbassets.com/static/v2514/images/favicon.ico?v=2514" type="image/x-icon">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="cartPage.css">
+    <script src="https://kit.fontawesome.com/b18434914d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="navBar"></div>
+    <!-- cart container div -->
+    <div id="cartContainer">
+        <h1 id="topTotal">There are no items in your basket.</h1>
+        <hr>
+        <!-- cart meta data div -->
+        <div id="cartItemInfo">
+            <div id="topHeading">
+                <div id="left">
+                    <div id="leftChild1">
+                        <p>ITEM DESCRIPTION</p>
+                    </div>
+                    <div id="leftChild2">
+                        <p>UNIT PRICE</p>
+                        <p>QUANTITY</p>
+                        <p>SUBTOTAL</p>
+                    </div>
+                </div>
+                <div id="right">
+                    <p>SAVINGS</p>
+                </div>
+            </div>
+            <div id="bottomHeading">
+                <div id="bottomContent">
+                    <h3>Fruits and Vegetables</h3>
+                    <p id="itemCount"> 1 item </p>
+                    <p id="itemAmount">Rs 2000</p>
+                </div>
+            </div>
+            <div id="cartItems">
+                <!-- childDiv start -->
+
+                <!-- child div end -->
+            </div>
+        </div>
+        <!-- items DESCRIPTION div -->
+        <div id="checkoutBox">
+            <div id="leftBox">
+                <button id="emptyButton"><i class="fas fa-shopping-basket"></i>Empty Basket</button>
+                <button class="btnShop">Continue Shopping</button>
+            </div>
+
+            <div id="rightBox">
+                <div id="checkoutMain">
+                    <div id="box1">
+                        <div id="subTotalDiv">
+                            <div id="totalDiv">
+                                <p>Subtotal</p>
+                                <h3 id="subTotalPrice">Rs 584.77</h3>
+                            </div>
+                            <div id="deliveryDiv">
+                                <h3>Delivery Charges
+                                    <i class="fa-solid fa-circle-question mark "></i>
+                                </h3>
+                                <h3>**</h3>
+                            </div>
+                            <div id="totalPayDiv">
+                                <h2>TOTAL</h2>
+                                <h2 id="totalDivPrice">Rs 584.77</h2>
+                            </div>
+
+                        </div>
+                        <div id="SavedDiv">
+                            <i class="fa-sharp fa-solid fa-piggy-bank fa-flip-horizontal pig"></i>
+                            <p>You Saved! <br> Rs 00.00</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p id="cuponTotal">* For this order: Accepted food coupon is Rs. 52.19</p>
+                        <hr>
+                    </div>
+                    <div id="checkoutButtonDiv">
+                        <button>CHECKOUT
+                            <i class="fa fa-arrow-alt-circle-right"></i>
+                        </button>
+                    </div>
+                    <p id="actDel">** Actual delivery charges computed at checkout time</p>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>   
+
+    <div id="footer"></div>
+</body>
+<script src="cartPage.js"></script>
+
+</html>
