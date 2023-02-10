@@ -1,164 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Category Page</title>
-    <link rel="stylesheet" href="category.css">
+    <link rel="stylesheet" href="category.css" />
     <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-</head>
-<body style="margin: 0;">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body style="margin: 0">
     <!-- nav section -->
-        <div style="text-align: center;  height: 50px;   background-color: rgba(71, 111, 0, 1); margin: 0px;  position: sticky; top: 0; z-index: 101;">
-            <h1 style="margin: 0; color: #fff;">NavBar Section</h1>
-        </div>
+    <div
+      style="
+        text-align: center;
+        height: 50px;
+        background-color: rgba(71, 111, 0, 1);
+        margin: 0px;
+        position: sticky;
+        top: 0;
+        z-index: 101;
+      "
+    >
+      <h1 style="margin: 0; color: #fff">NavBar Section</h1>
+    </div>
 
-        
     <!-- nav section end -->
 
-   <div id="container">
+    <div id="container">
+      <!-- category nav container -->
 
+      <div id="shop-by-category">
+        <div id="shop-by">
+          <span>Shop By</span>
+          <button>Apples & Pomogrenate</button>
+          <button>Banana, Sapota & Papaya</button>
+          <button>Kiwi, Melon, Citrus fruits</button>
+          <button>Mangoes</button>
+          <button>Seasonal fruits</button>
+        </div>
+      </div>
 
-            <!-- category nav container -->
+      <!-- category nav container end -->
 
-            <div id="shop-by-category">
-                
-                <div id="shop-by">
-                    <span>Shop By</span>
-                    <button>Apples & Pomogrenate</button>
-                    <button>Banana, Sapota & Papaya</button>
-                    <button>Kiwi, Melon, Citrus fruits</button>
-                    <button>Mangoes</button>
-                    <button>Seasonal fruits</button>
-        
+      <!-- title container section -->
+
+      <div class="title-container">
+        <h2 class="category-title">Fresh Fruits</h2>
+        <span class="fruits-count">(75)</span>
+      </div>
+
+      <!-- title container section end-->
+
+      <!-- main conatiner -->
+
+      <div id="main-container">
+        <!-- filter container -->
+
+        <div class="filter-container">
+          <button onclick="hideSortSection()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.98 8.223A10.477 10.477 0 001.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.45 10.45 0 0112 4.5c4.756 0 8.773 3.162 10.065 7.498a10.523 10.523 0 01-4.293 5.774M6.228 6.228L3 3m3.228 3.228l3.65 3.65m7.894 7.894L21 21m-3.228-3.228l-3.65-3.65m0 0a3 3 0 10-4.243-4.243m4.242 4.242L9.88 9.88"
+              />
+            </svg>
+            <span>Hide Filter</span>
+          </button>
+          <button>
+            <span>Relevance</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- filter container end-->
+
+        <!-- product continer -->
+
+        <div class="product-container">
+          <section id="sort-box">
+            <div>
+              <div>
+                <div>
+                  <span class="filterByLabel">Shop by Category</span>
+                  <a href="">
+                    <svg
+                      width="20"
+                      height="20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="mx-1 xl:w-5.5 xl:h-5.5 flex-shrink-0"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11.523 15.833a.832.832 0 0 1-.65-.31l-4.023-5a.834.834 0 0 1 .01-1.056l4.166-5a.833.833 0 1 1 1.28 1.067l-3.73 4.475 3.596 4.468a.833.833 0 0 1-.649 1.356Z"
+                        fill="#101010"
+                      ></path>
+                      <mask
+                        id="arrow-left_svg__a"
+                        mask-type="alpha"
+                        maskUnits="userSpaceOnUse"
+                        x="6"
+                        y="4"
+                        width="7"
+                        height="12"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M11.523 15.833a.832.832 0 0 1-.65-.31l-4.023-5a.834.834 0 0 1 .01-1.056l4.166-5a.833.833 0 1 1 1.28 1.067l-3.73 4.475 3.596 4.468a.833.833 0 0 1-.649 1.356Z"
+                          fill="#fff"
+                        ></path>
+                      </mask>
+                      <g mask="url(#arrow-left_svg__a)">
+                        <path fill="#101010" d="M0 0h20v20H0z"></path>
+                      </g>
+                    </svg>
+                    <span>Fruits and Vegetables</span>
+                  </a>
+                  <div class="filter-1-list">
+                    <ul>
+                      <li><span>Fruits</span></li>
+                      <li><span>Apples</span></li>
+                      <li><span>Seasonal fruits</span></li>
+                      <li><span>Pomegrenate</span></li>
+                      <li><span>Strawberry</span></li>
+                    </ul>
+                  </div>
                 </div>
-
-            </div>
-
-            <!-- category nav container end -->
-
-
-            <!-- title container section -->
-
-            <div class="title-container">
-                <h2 class="category-title">Fresh Fruits</h2>
-                <span class="fruits-count">(75)</span>
-            </div>
-
-            <!-- title container section end-->
-
-            <!-- main conatiner -->
-
-            <div id="main-container">
-
-
-                <!-- filter container -->
-
-                    <div class="filter-container">
-                        <button onclick="hideSortSection()"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.98 8.223A10.477 10.477 0 001.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.45 10.45 0 0112 4.5c4.756 0 8.773 3.162 10.065 7.498a10.523 10.523 0 01-4.293 5.774M6.228 6.228L3 3m3.228 3.228l3.65 3.65m7.894 7.894L21 21m-3.228-3.228l-3.65-3.65m0 0a3 3 0 10-4.243-4.243m4.242 4.242L9.88 9.88" />
-                        </svg>
-                        <span>Hide Filter</span>
-                        </button>
-                        <button><span>Relevance</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
-                            </svg>
-                            
-                        </button>
-                        
-                    </div>
-            
-
-                <!-- filter container end-->
-
-
-                <!-- product continer -->
-
-                    <div class="product-container">
-                        <section id="sort-box">
-                            <div >
-                                    <div>
-                                        <div><span class="filterByLabel">Shop by Category</span>
-                                            <a href="">
-                                                <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" class="mx-1 xl:w-5.5 xl:h-5.5 flex-shrink-0"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.523 15.833a.832.832 0 0 1-.65-.31l-4.023-5a.834.834 0 0 1 .01-1.056l4.166-5a.833.833 0 1 1 1.28 1.067l-3.73 4.475 3.596 4.468a.833.833 0 0 1-.649 1.356Z" fill="#101010"></path><mask id="arrow-left_svg__a" mask-type="alpha" maskUnits="userSpaceOnUse" x="6" y="4" width="7" height="12"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.523 15.833a.832.832 0 0 1-.65-.31l-4.023-5a.834.834 0 0 1 .01-1.056l4.166-5a.833.833 0 1 1 1.28 1.067l-3.73 4.475 3.596 4.468a.833.833 0 0 1-.649 1.356Z" fill="#fff"></path></mask><g mask="url(#arrow-left_svg__a)"><path fill="#101010" d="M0 0h20v20H0z"></path></g></svg>
-                                                <span>Fruits and Vegetables</span>
-                                            </a>
-                                            <div class="filter-1-list">
-                                                <ul>
-                                                    <li><span>Fruits</span></li>
-                                                    <li><span>Apples</span></li>
-                                                    <li><span>Seasonal fruits</span></li>
-                                                    <li><span>Pomegrenate</span></li>
-                                                    <li><span>Strawberry</span></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <span class="refinedByLabel">Refined By</span>
-                                        <!-- filters select tag -->
-                                        <div class="filterBy">
-                                            <div>
-                                                <span>Brands</span>
-                                                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" class="transform rotate-180"><path d="M12 15.5a.997.997 0 0 1-.707-.293l-4-4a.999.999 0 1 1 1.414-1.414l3.305 3.305 3.293-3.18a1 1 0 0 1 1.39 1.439l-4 3.862a.998.998 0 0 1-.695.28Z"></path></svg>
-                                            </div>
-                                            <div class="list-items">
-                                                <span>
-                                                    <input type="checkbox" name="brandName" id=""><label for="brand">Fresho</label>
-                                                </span>
-                                                <span>
-                                                    <input type="checkbox" name="brandName" id=""><label for="brand">Fresho</label>
-                                                </span>
-                                                
-                                                
-                                            </div>
-                                        </div>
-                                        <!-- filter by price select -->
-                                        <div class="filterBy">
-                                            <div>
-                                                <span>Price</span>
-                                                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" class="transform rotate-180"><path d="M12 15.5a.997.997 0 0 1-.707-.293l-4-4a.999.999 0 1 1 1.414-1.414l3.305 3.305 3.293-3.18a1 1 0 0 1 1.39 1.439l-4 3.862a.998.998 0 0 1-.695.28Z"></path></svg>
-                                            </div>
-                                            <div class="list-items">
-                                                <span>
-                                                    <input type="checkbox" name="brandName" id=""><label for="brand">₹50 - ₹100</label>
-                                                </span>
-                                                <span>
-                                                    <input type="checkbox" name="brandName" id=""><label for="brand">₹100 - ₹200</label>
-                                                </span>
-                                                <span>
-                                                    <input type="checkbox" name="brandName" id=""><label for="brand">₹200 - ₹250</label>
-                                                </span>
-                                            </div>
-
-                                        </div>
-                                        <!-- filter by discount select -->
-                                        <div class="filterBy">
-                                            <div>
-                                                <span>Discount</span>
-                                                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" class="transform rotate-180"><path d="M12 15.5a.997.997 0 0 1-.707-.293l-4-4a.999.999 0 1 1 1.414-1.414l3.305 3.305 3.293-3.18a1 1 0 0 1 1.39 1.439l-4 3.862a.998.998 0 0 1-.695.28Z"></path></svg>
-                                            </div>
-                                            <div class="list-items">
-                                                <span>
-                                                    <input type="radio" name="brandName" id=""><label for="brand">15% - 25%</label>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                    <hr>
-                                    <!-- <div style="position: absolute; height: 6px; transition: opacity 200ms ease 0s; opacity: 0; right: 2px; bottom: 2px; left: 2px; border-radius: 3px;"><div style="position: relative; display: block; height: 100%; cursor: pointer; border-radius: inherit; background-color: rgba(0, 0, 0, 0.2); width: 0px;"></div></div>
+                <span class="refinedByLabel">Refined By</span>
+                <!-- filters select tag -->
+                <div class="filterBy">
+                  <div>
+                    <span>Brands</span>
+                    <svg
+                      width="24"
+                      height="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="transform rotate-180"
+                    >
+                      <path
+                        d="M12 15.5a.997.997 0 0 1-.707-.293l-4-4a.999.999 0 1 1 1.414-1.414l3.305 3.305 3.293-3.18a1 1 0 0 1 1.39 1.439l-4 3.862a.998.998 0 0 1-.695.28Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="list-items">
+                    <span>
+                      <input type="checkbox" name="brandName" id="" /><label
+                        for="brand"
+                        >Fresho</label
+                      >
+                    </span>
+                    <span>
+                      <input type="checkbox" name="brandName" id="" /><label
+                        for="brand"
+                        >Fresho</label
+                      >
+                    </span>
+                  </div>
+                </div>
+                <!-- filter by price select -->
+                <div class="filterBy">
+                  <div>
+                    <span>Price</span>
+                    <svg
+                      width="24"
+                      height="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="transform rotate-180"
+                    >
+                      <path
+                        d="M12 15.5a.997.997 0 0 1-.707-.293l-4-4a.999.999 0 1 1 1.414-1.414l3.305 3.305 3.293-3.18a1 1 0 0 1 1.39 1.439l-4 3.862a.998.998 0 0 1-.695.28Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="list-items">
+                    <span>
+                      <input type="checkbox" name="brandName" id="" /><label
+                        for="brand"
+                        >₹50 - ₹100</label
+                      >
+                    </span>
+                    <span>
+                      <input type="checkbox" name="brandName" id="" /><label
+                        for="brand"
+                        >₹100 - ₹200</label
+                      >
+                    </span>
+                    <span>
+                      <input type="checkbox" name="brandName" id="" /><label
+                        for="brand"
+                        >₹200 - ₹250</label
+                      >
+                    </span>
+                  </div>
+                </div>
+                <!-- filter by discount select -->
+                <div class="filterBy">
+                  <div>
+                    <span>Discount</span>
+                    <svg
+                      width="24"
+                      height="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="transform rotate-180"
+                    >
+                      <path
+                        d="M12 15.5a.997.997 0 0 1-.707-.293l-4-4a.999.999 0 1 1 1.414-1.414l3.305 3.305 3.293-3.18a1 1 0 0 1 1.39 1.439l-4 3.862a.998.998 0 0 1-.695.28Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="list-items">
+                    <span>
+                      <input type="radio" name="brandName" id="" /><label
+                        for="brand"
+                        >15% - 25%</label
+                      >
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <!-- <div style="position: absolute; height: 6px; transition: opacity 200ms ease 0s; opacity: 0; right: 2px; bottom: 2px; left: 2px; border-radius: 3px;"><div style="position: relative; display: block; height: 100%; cursor: pointer; border-radius: inherit; background-color: rgba(0, 0, 0, 0.2); width: 0px;"></div></div>
                                     <div style="position: absolute; width: 6px; transition: opacity 200ms ease 0s; opacity: 0; right: 2px; bottom: 2px; top: 2px; border-radius: 3px;"><div class="w-1 ml-0.5 lg:h-6 xl:h-10 rounded-2xl bg-black opacity-25" style="height: 105px; transform: translateY(0px);"></div></div> -->
-                                
-                            </div>
-
-                        </section>
-                        <section>
-                            <!-- product display section -->
-                            <ul id="product-box">
-                                <!-- <li class="product-items">
+            </div>
+          </section>
+          <section>
+            <!-- product display section -->
+            <ul id="product-box">
+              <!-- <li class="product-items">
                                     <div>
                                         <div>
                                             <div class="deckImg"> 
@@ -1839,37 +1932,24 @@
                                     </div>
                                 </li>
                                  -->
-                                
-                            </ul>
+            </ul>
+          </section>
+        </div>
 
-                        </section>
-                    </div>
-
-
-                <!-- product continer end -->
-
-
-
-            </div>
-            <!-- main conatianer end -->
-
-           
-       
+        <!-- product continer end -->
+      </div>
+      <!-- main conatianer end -->
     </div>
 
-    <hr>
+    <hr />
 
     <!-- Footer section -->
-    <div style="text-align: center;">
-        <h1>Footer Section</h1>
+    <div style="text-align: center">
+      <h1>Footer Section</h1>
     </div>
 
-    
-<!-- Footer section end -->
-
-    
-       
-</body>
+    <!-- Footer section end -->
+  </body>
 </html>
 
 <script src="category.js"></script>

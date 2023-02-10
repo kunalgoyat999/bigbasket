@@ -449,9 +449,6 @@ var productsObjArr=[
 displayProducts();
 
 function displayProducts(){
-
-
-
     //proDuct arr looping
 
     productsObjArr.map(function(e,i){

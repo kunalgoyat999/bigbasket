@@ -219,7 +219,7 @@
       <h2>Fruits and Vegetables</h2>
       <hr />
       <div>
-        <div>
+        <div id="fruits">
           <img src="./images/fruitsvegetables/1st.webp" alt="" />
         </div>
         <div>
@@ -654,6 +654,11 @@
         showMoreText.append(brtg);
         buttonText.innerHTML = "Read Less..";
       }
+    }
+    document.getElementById("fruits").addEventListener("click", saveCategory);
+    function saveCategory(){
+      localStorage.setItem("category", "fruits&vegetables")
+      window.location.href = "category/category.html"
     }
   </script>
 </html>
