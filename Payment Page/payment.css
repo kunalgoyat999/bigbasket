@@ -1,5 +1,10 @@
-body {
+  body {
     margin: 0px;
+  }
+
+  #content{
+    display: flex;
+    justify-content: center;
   }
   #head {
     width: 100%;
@@ -26,7 +31,8 @@ body {
     border: 1px solid rgb(206, 199, 199);
     height: 500px;
     width: 75%;
-    margin: auto;
+    margin-left: 20px;
+    /* margin: auto; */
     margin-top:20px;
   }
   #left {
@@ -36,7 +42,6 @@ body {
     flex-direction: column;
   }
   #right {
-   
     flex: 4;
     background-color: whitesmoke;
   }
@@ -138,5 +143,125 @@ body {
       border:none;
       color:white;
   }
+
+  /* Left Box */
+  .card-body1 {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+}
+
+form {
+  margin-top: 50px;
+  display: inline-block;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 14px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+
+  /* Right Box */
   
+  #rightCon{
+    margin-left: 12px;
+  }
+  #rightCon h5{
+    font-size: 16px;
+    color: #666666;
+  }
+
+  #voucher {
+    width: 300px;
+    height: 100px;
+    background-color: #F7F7F7;
+    margin: 0 auto;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  
+  input[type="text"] {
+    width: 60%;
+    padding: 12px 15px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+  }
+  
+  button[id="apply-btn"] {
+    width: 30%;
+    padding: 12px 15px;
+    background-color: #b8bcb8;
+    color: rgb(23, 20, 20);
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #apply-btn:hover{
+    background-color: #17b517;
+  }
+  #message {
+    margin: 8px 0;
+    color: green;
+    font-weight: bold;
+  }
+
+  #orderSum{
+    width: 300px;
+    height: auto;
+    padding: 4px 5px;
+    background-color: #F7F7F7;
+    /* margin: 0 auto; */
+    text-align: left;
+    font-family: sans-serif;
+  }
+  .orSum{
+    margin-top: 8px;
+    color: #666666;
+  }
+
+  #orderSum h4{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 15px;
+    color: #666666;
+  }
+  #orderSum #total{
+    border: none;
+    padding: 10px 10px;
+    background-color: #dcf2bb;
+    color: #518406;
+  }
   

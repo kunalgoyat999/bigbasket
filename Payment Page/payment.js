@@ -19,3 +19,17 @@ function pay() {
     window.location.href = "index.html";
   }
 }
+
+
+const couponInput = document.getElementById("coupon-input");
+const applyBtn = document.getElementById("apply-btn");
+const message = document.getElementById("message");
+
+applyBtn.addEventListener("click", function () {
+  const couponCode = couponInput.value;
+  if (couponCode === "DISCOUNT") {
+    message.innerHTML = "Coupon code applied. Discount added to the total.";
+  } else {
+    message.innerHTML = "Invalid coupon code. Please try again.";
+  }
+});
