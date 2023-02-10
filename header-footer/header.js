@@ -1,16 +1,23 @@
 document.getElementById("button").addEventListener("click", submitForm);
 var arr = JSON.parse(localStorage.getItem("login-data")) || [];
+
 function submitForm(){
     
     event.preventDefault();
-    console.log("hii")
     var num = document.getElementById("number").value;
-    console.log(num)
-    arr.push(num)
-    localStorage.setItem("login-data", JSON.stringify(arr));
 
     if(num.length === 10){
-        window.location.href = "otp.html";
+
+        for(var i=0; i<arr.length; i++){
+            if(arr[i] == num){
+                window.location.href = "../index.html";
+                return;
+            }
+        }
+        arr.push(num)
+        localStorage.setItem("login-data", JSON.stringify(arr));
+        window.location.href = "header-footer/otp.html";
+        
     }
     else{
         var tag = document.getElementById("ptag");
@@ -19,6 +26,11 @@ function submitForm(){
         tag.style.color="red"
         tag.style.fontSize="20px"
     }
+
+    
+
+
+    
 }
 
 var loginBtn = document.querySelector(".loginBtn");
