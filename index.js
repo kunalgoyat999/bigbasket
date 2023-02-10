@@ -17,20 +17,30 @@ function ontoggle() {
   }
 }
 
-document.getElementById("fruits").addEventListener("click", saveCategory)
-
-function saveCategory() {
+document.getElementById("fruits").addEventListener("click", function(){
     localStorage.setItem("category", "fruits")
-}
+})
 
-document.getElementById("daily").addEventListener("click", saveCategory)
-
-function saveCategory() {
+document.getElementById("daily").addEventListener("click", function(){
     localStorage.setItem("category", "daily")
-}
+})
 
-document.getElementById("fruits").addEventListener("click", saveCategory)
+document.getElementById("beverage").addEventListener("click", function(){
+    localStorage.setItem("category", "beverage")
+})
 
-function saveCategory() {
-    localStorage.setItem("category", "fruits")
-}
+document.getElementById("snack").addEventListener("click", function(){
+    localStorage.setItem("category", "snack")
+})
+
+document.getElementById("clean").addEventListener("click", function(){
+    localStorage.setItem("category", "clean")
+})
+
+document.getElementById("beaut").addEventListener("click", function(){
+    localStorage.setItem("category", "beaut")
+})
+
+document.getElementById("homeproducts").addEventListener("click", function(){
+    localStorage.setItem("category", "homeproducts")
+})
