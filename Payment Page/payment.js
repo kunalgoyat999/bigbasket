@@ -1,14 +1,13 @@
 displayamount();
 
-
 function displayamount() {
   var basketvalue = document.getElementById("basketvalue");
   var total = document.getElementById("tot");
 
   var tot = localStorage.getItem("totalcartValue");
-  basketvalue.textContent = " "+ tot;
+  basketvalue.textContent = " " + tot;
 
-  total.textContent = " "+ tot;
+  total.textContent = " " + tot;
 }
 
 var couponInput = document.getElementById("coupon-input");
@@ -20,7 +19,10 @@ applyBtn.addEventListener("click", function () {
   var basketvalue = document.getElementById("basketvalue");
   var total = document.getElementById("tot");
   if (couponCode === "masai30") {
-    basketvalue.textContent -= (Number(basketvalue.textContent) * (3 / 10)).toFixed();
+    basketvalue.textContent -= (
+      Number(basketvalue.textContent) *
+      (3 / 10)
+    ).toFixed();
     total.textContent -= Number(total.textContent) * (3 / 10);
   } else {
     message.innerHTML = "Invalid coupon code. Please try again.";
@@ -29,7 +31,7 @@ applyBtn.addEventListener("click", function () {
 
 // Save Address
 
-document.getElementById("submitbutton").addEventListener("click", saveAddress)
+document.getElementById("submitbutton").addEventListener("click", saveAddress);
 
 var addArr = JSON.parse(localStorage.getItem("address")) || [];
 
@@ -40,17 +42,17 @@ function saveAddress() {
   var state = document.getElementById("state").value;
   var zip = document.getElementById("zip").value;
 
-  console.log(street + " " + city+ " "+state+" ,"+ zip);
+  console.log(street + " " + city + " " + state + " ," + zip);
 
   var addobj = {
     name: fullname,
-    address: street + " ," + city+ " ,"+state+" ,"+ zip
-  }
+    address: street + " ," + city + " ," + state + " ," + zip,
+  };
 
-  addArr.push(addobj)
+  addArr.push(addobj);
 
-  localStorage.setItem("address", JSON.stringify(addArr))
-
+  localStorage.setItem("address", JSON.stringify(addArr));
+  alert("Your Address Saved Successfully");
 }
 
 // For Payment
@@ -73,7 +75,6 @@ function pay() {
     window.location.href = "../../index.html";
   }
 }
-
 
 // Nav Bar
 document.getElementById("basket").addEventListener("click", function () {

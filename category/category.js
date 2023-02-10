@@ -600,248 +600,1236 @@ var productsObjArr = [
   },
 ];
 
-var dailyStaples = [
+var beveragesObjArr =[
   {
     productId: 1,
-    name: "Superior-Mp-Sharbati-Atta/Ghau Peeth - Fortified",
-    imgSrc:
-      "https://www.bigbasket.com/media/uploads/p/m/40019371_26-bournvita-chocolate-health-drink-bournvita.jpg?tr=w-3840,q=80",
-    finalPrice: "₹499",
-    strikedOffPrice: "₹650",
-    quantity: "500 g - Pouch",
+    name: 'Chocolate Health Drink - Bournvita',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40019371_26-bournvita-chocolate-health-drink-bournvita.jpg?tr=w-3840,q=80',
+    finalPrice: '₹297.6',
+    strikedOffPrice: '₹320',
+    quantity: '400 g - Carton',
+    qty: 1,
+    inCart: false,
+    offer: '₹22 OFF'
+  },
+  {
+    productId: 2,
+    name: 'Health & Nutrition Drink - Classic Malt',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40117959_5-horlicks-health-nutrition-drink-classic-malt.jpg?tr=w-3840,q=80',
+    finalPrice: '₹199',
+    strikedOffPrice: '₹199',
+    quantity: '450 g - Jar',
+    qty: 1,
+    inCart: false,
+    offer: '₹20 OFF'
+  },
+  {
+    productId: 3,
+    name: 'Nutritional Powder - Complete & Balanced, Premium Chocolate',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/20005379_8-pediasure-nutritional-powder-complete-balanced-premium-chocolate.jpg?tr=w-3840,q=80',
+    finalPrice: '₹635',
+    strikedOffPrice: '₹655',
+    quantity: '75 g - Pouch',
+    qty: 1,
+    inCart: false,
+    offer: '12% OFF'
+  },
+  {
+    productId: 4,
+    name: 'Powder Mix - Hot Chocolate Drink',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/277866_12-cadbury-powder-mix-hot-chocolate-drink.jpg?tr=w-3840,q=80',
+    finalPrice: '₹184.8',
+    strikedOffPrice: '₹210',
+    quantity: '400g - Carton',
+    qty: 1,
+    inCart: false,
+    offer: '13% OFF'
+  },
+  {
+    productId: 5,
+    name: 'Health & Nutrition Drink Refill',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/119385_11-horlicks-health-nutrition-drink-classic-malt.jpg?tr=w-3840,q=80',
+    finalPrice: '₹488',
+    strikedOffPrice: '₹559',
+    quantity: '400 g - Jar',
+    qty: 1,
+    inCart: false,
+    offer: '11% OFF'
+  },
+  {
+    productId: 6,
+    name: 'Chocolate Health Drink - Bournvita',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/102830_24-bournvita-chocolate-health-drink-bournvita.jpg?tr=w-3840,q=80',
+    finalPrice: '₹399',
+    strikedOffPrice: '₹450',
+    quantity: '750 g - Pouch',
+    qty: 1,
+    inCart: false,
+    offer: '₹20 OFF'
+  },
+  {
+    productId: 7,
+    name: "Women's Plus - Caramel",
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/272455_19-horlicks-womens-plus-caramel.jpg?tr=w-3840,q=80',
+    finalPrice: '₹345',
+    strikedOffPrice: '₹345',
+    quantity: '500 g - Pouch',
+    qty: 1,
+    inCart: false,
+    offer: '14% OFF'
+  },
+  {
+    productId: 8,
+    name: 'Nutritional Powder - Complete & Balanced, Vanilla Delight',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/20005381_8-pediasure-nutritional-powder-complete-balanced-vanilla-delight.jpg?tr=w-3840,q=80',
+    finalPrice: '₹635',
+    strikedOffPrice: '₹655',
+    quantity: '250 g',
+    qty: 1,
+    inCart: false,
+    offer: '₹60 OFF'
+  },
+  {
+    productId: 9,
+    name: 'Chocolate Health Drink - Bournvita',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40133416_19-cadbury-chocolate-health-drink-bournvita.jpg?tr=w-3840,q=80',
+    finalPrice: '₹720.68',
+    strikedOffPrice: '₹838',
+    quantity: '400 g - Jar',
+    qty: 1,
+    inCart: false,
+    offer: '₹20 OFF'
+  },
+  {
+    productId: 10,
+    name: 'Health & Nutritional Drink - Tasty Chocolate Flavour',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40097880_6-protinex-health-nutritional-drink-tasty-chocolate-flavour.jpg?tr=w-3840,q=80',
+    finalPrice: '₹590',
+    strikedOffPrice: '₹650',
+    quantity: '200 g - Jar',
+    qty: 1,
+    inCart: false,
+    offer: '₹30 OFF'
+  },
+  {
+    productId: 11,
+    name: 'Health Drink With High Protein - Vanilla Flavour, Provides Complete Nutrition For Adults',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/227052_10-ensure-nutritional-powder-vanilla-flavour.jpg?tr=w-3840,q=80',
+    finalPrice: '₹665',
+    strikedOffPrice: '₹685',
+    quantity: '500 g',
+    qty: 1,
+    inCart: false,
+    offer: '7% OFF'
+  },
+  {
+    productId: 12,
+    name: "Women's Plus, Chocolate",
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40052960_16-horlicks-womens-plus-chocolate.jpg?tr=w-3840,q=80',
+    finalPrice: '₹320',
+    strikedOffPrice: '₹320',
+    quantity: '750 g - Carton',
+    qty: 1,
+    inCart: false,
+    offer: '₹60 OFF'
+  },
+  {
+    productId: 13,
+    name: 'Lite Health & Nutrition Drink - Regular Malt Flavour',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/170752_8-horlicks-lite-health-nutrition-drink-regular-malt-flavour.jpg?tr=w-3840,q=80',
+    finalPrice: '₹315',
+    strikedOffPrice: '₹345',
+    quantity: '750 g',
+    qty: 1,
+    inCart: false,
+    offer: '20% OFF'
+  },
+  {
+    productId: 14,
+    name: 'Chocolate Health Drink - Bournvita',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/162275_17-bournvita-chocolate-health-drink-bournvita.jpg?tr=w-3840,q=80',
+    finalPrice: '₹28',
+    strikedOffPrice: '₹30',
+    quantity: '500 g - Carton',
+    qty: 1,
+    inCart: false,
+    offer: '₹32 OFF'
+  },
+  {
+    productId: 15,
+    name: 'Health & Nutrition Drink - Chocolate',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/20005341_6-horlicks-health-nutrition-drink-chocolate-flavour.jpg?tr=w-3840,q=80',
+    finalPrice: '₹439',
+    strikedOffPrice: '₹439',
+    quantity: '400 g',
+    qty: 1,
+    inCart: false,
+    offer: '₹20 OFF'
+  },
+  {
+    productId: 16,
+    name: 'Health & Nutritional Drink - Vanilla Delight Flavour',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/305792_12-protinex-health-nutritional-drink-vanilla-delight-flavour.jpg?tr=w-3840,q=80',
+    finalPrice: '₹565',
+    strikedOffPrice: '₹625',
+    quantity: '1 Kg - Carton',
+    qty: 1,
+    inCart: false,
+    offer: '₹20 OFF'
+  },
+  {
+    productId: 17,
+    name: 'Nutrition & Health Drink - Improves Concentration & Memory, Royale Chocolate Flavour',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/269603_9-complan-nutrition-health-drink-improves-concentration-memory-royale-chocolate-flavour.jpg?tr=w-3840,q=80',
+    finalPrice: '₹432',
+    strikedOffPrice: '₹540',
+    quantity: '500 g - Pouch',
+    qty: 1,
+    inCart: false,
+    offer: '15% OFF'
+  },
+  {
+    productId: 18,
+    name: 'Chocolate Health Drink - 5 Star Magic',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40126617_8-bournvita-chocolate-health-drink-5-star-magic.jpg?tr=w-3840,q=80',
+    finalPrice: '₹372.6',
+    strikedOffPrice: '₹405',
+    quantity: '200 g',
+    qty: 1,
+    inCart: false,
+    offer: '₹20 OFF'
+  },
+  {
+    productId: 19,
+    name: 'Nutritious Milk Drink for Growing Children, Creamy Vanilla',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40136118_8-nestle-nangrow-nutritious-milk-drink-for-growing-children-creamy-vanilla.jpg?tr=w-3840,q=80',
+    finalPrice: '₹585',
+    strikedOffPrice: '₹585',
+    quantity: '500 g',
+    qty: 1,
+    inCart: false,
+    offer: '13% OFF'
+  },
+  {
+    productId: 20,
+    name: "Women's Plus - Chocolate",
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/272456_19-horlicks-womens-plus-chocolate.jpg?tr=w-3840,q=80',
+    finalPrice: '₹345',
+    strikedOffPrice: '₹345',
+    quantity: '4 kg - Pouch',
+    qty: 1,
+    inCart: false,
+    offer: '₹20 OFF'
+  }
+];
+
+var dailyStaples =[
+  {
+    productId: 1,
+    name: 'Superior-Mp-Sharbati-Atta/Ghau Peeth - Fortified',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40189429_4-bb-royal-superior-mp-sharbati-atta-fortified.jpg?tr=w-3840,q=80',
+    finalPrice: '₹499',
+    strikedOffPrice: '₹650',
+    quantity: '500 g - Pouch',
     qty: 1,
     inCart: false,
     offer: "23% OFF",
   },
   {
     productId: 2,
-    name: "Atta/Ghau Peeth - Whole Wheat",
-    imgSrc:
-      "https://www.bigbasket.com/media/uploads/p/m/40117959_5-horlicks-health-nutrition-drink-classic-malt.jpg?tr=w-3840,q=80",
-    finalPrice: "₹470",
-    strikedOffPrice: "₹551",
-    quantity: "750 g",
+    name: 'Atta/Ghau Peeth - Whole Wheat',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/126906_8-aashirvaad-atta-whole-wheat.jpg?tr=w-3840,q=80',
+    finalPrice: '₹470',
+    strikedOffPrice: '₹551',
+    quantity: '750 g',
     qty: 1,
     inCart: false,
     offer: "15% OFF",
   },
   {
     productId: 3,
-    name: "Atta With 9 Multigrain - High-Fibre & High Protein Soft Rotis, Fortified",
-    imgSrc:
-      "https://www.bigbasket.com/media/uploads/p/m/20005379_8-pediasure-nutritional-powder-complete-balanced-premium-chocolate.jpg?tr=w-3840,q=80",
-    finalPrice: "₹545",
-    strikedOffPrice: "₹650",
-    quantity: "500 g",
+    name: 'Atta With 9 Multigrain - High-Fibre & High Protein Soft Rotis, Fortified',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40214912_1-bb-royal-multigrain-atta.jpg?tr=w-3840,q=80',
+    finalPrice: '₹545',
+    strikedOffPrice: '₹650',
+    quantity: '500 g',
     qty: 1,
     inCart: false,
     offer: "16% OFF",
   },
   {
     productId: 4,
-    name: "Sooji Rawa",
-    imgSrc:
-      "https://www.bigbasket.com/media/uploads/p/m/277866_12-cadbury-powder-mix-hot-chocolate-drink.jpg?tr=w-3840,q=80",
-    finalPrice: "₹38",
-    strikedOffPrice: "₹42",
-    quantity: "500 g",
+    name: 'Sooji Rawa',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/289910_10-madam-sooji-rawa.jpg?tr=w-3840,q=80',
+    finalPrice: '₹38',
+    strikedOffPrice: '₹42',
+    quantity: '500 g',
     qty: 1,
     inCart: false,
     offer: "10% OFF",
   },
   {
     productId: 5,
-    name: "Atta with Multigrains - High Fibre",
-    imgSrc:
-      "https://www.bigbasket.com/media/uploads/p/m/119385_11-horlicks-health-nutrition-drink-classic-malt.jpg?tr=w-3840,q=80",
-    finalPrice: "₹590.75",
-    strikedOffPrice: "₹695",
-    quantity: "500 g",
+    name: 'Atta with Multigrains - High Fibre',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40236230_3-aashirvaad-atta-with-multigrains-high-fibre-soft-rotis.jpg?tr=w-3840,q=80',
+    finalPrice: '₹590.75',
+    strikedOffPrice: '₹695',
+    quantity: '500 g',
     qty: 1,
     inCart: false,
     offer: "15% OFF",
   },
   {
     productId: 6,
-    name: "Chakki-Fresh-Wheat-Atta/Ghau Peeth - Fortified",
-    imgSrc:
-      "https://www.bigbasket.com/media/uploads/p/m/102830_24-bournvita-chocolate-health-drink-bournvita.jpg?tr=w-3840,q=80",
-    finalPrice: "₹210",
-    strikedOffPrice: "₹290",
-    quantity: "500 g - Pouch",
+    name: 'Chakki-Fresh-Wheat-Atta/Ghau Peeth - Fortified',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40099240_9-bb-royal-chakki-fresh-wheat-atta-fortified.jpg?tr=w-3840,q=80',
+    finalPrice: '₹210',
+    strikedOffPrice: '₹290',
+    quantity: '500 g - Pouch',
     qty: 1,
     inCart: false,
     offer: "28% OFF",
   },
   {
     productId: 7,
-    name: "Chakki-Fresh-Wheat-Atta/Ghau Peeth - Fortified",
-    imgSrc:
-      "https://www.bigbasket.com/media/uploads/p/m/272455_19-horlicks-womens-plus-caramel.jpg?tr=w-3840,q=80",
-    finalPrice: "₹412",
-    strikedOffPrice: "₹550",
-    quantity: "500 g - Pouch",
+    name: 'Chakki-Fresh-Wheat-Atta/Ghau Peeth - Fortified',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40099239_9-bb-royal-chakki-fresh-wheat-atta-fortified.jpg?tr=w-3840,q=80',
+    finalPrice: '₹412',
+    strikedOffPrice: '₹550',
+    quantity: '500 g - Pouch',
     qty: 1,
     inCart: false,
     offer: "25% OFF",
   },
   {
     productId: 8,
-    name: "Roasted Sooji/Rava",
-    imgSrc:
-      "https://www.bigbasket.com/media/uploads/p/m/20005381_8-pediasure-nutritional-powder-complete-balanced-vanilla-delight.jpg?tr=w-3840,q=80",
-    finalPrice: "₹69",
-    strikedOffPrice: "₹80",
-    quantity: "500 g - Pouch",
+    name: 'Roasted Sooji/Rava',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40064889_3-bb-royal-roasted-soojirava.jpg?tr=w-3840,q=80',
+    finalPrice: '₹69',
+    strikedOffPrice: '₹80',
+    quantity: '500 g - Pouch',
     qty: 1,
     inCart: false,
     offer: "14% OFF",
   },
   {
     productId: 9,
-    name: "Organic - Sooji/Rava",
-    imgSrc:
-      "https://www.bigbasket.com/media/uploads/p/m/40133416_19-cadbury-chocolate-health-drink-bournvita.jpg?tr=w-3840,q=80",
-    finalPrice: "₹77",
-    strikedOffPrice: "₹88",
-    quantity: "750 g",
+    name: 'Organic - Sooji/Rava',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40072490_15-bb-royal-organic-soojirawa.jpg?tr=w-3840,q=80',
+    finalPrice: '₹77',
+    strikedOffPrice: '₹88',
+    quantity: '750 g',
     qty: 1,
     inCart: false,
     offer: "13% OFF",
   },
   {
     productId: 10,
-    name: "Banana Flour - 100% Natural, Resistant Starch, Gluten Free",
-    imgSrc:
-      "https://www.bigbasket.com/media/uploads/p/m/40097880_6-protinex-health-nutritional-drink-tasty-chocolate-flavour.jpg?tr=w-3840,q=80",
-    finalPrice: "₹425",
-    strikedOffPrice: "₹545",
-    quantity: "500 g",
+    name: 'Banana Flour - 100% Natural, Resistant Starch, Gluten Free',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40255375_2-jiwa-raw-banana-flour-no-grains-gluten-free-resistant-starch-healthier-alternative-to-grain-flours.jpg?tr=w-3840,q=80',
+    finalPrice: '₹425',
+    strikedOffPrice: '₹545',
+    quantity: '500 g',
     qty: 1,
     inCart: false,
     offer: "22% OFF",
   },
   {
     productId: 11,
-    name: "Sooji Ordinary/Bombay Rava",
-    imgSrc:
-      "https://www.bigbasket.com/media/uploads/p/m/227052_10-ensure-nutritional-powder-vanilla-flavour.jpg?tr=w-3840,q=80",
-    finalPrice: "₹265",
-    strikedOffPrice: "₹325",
-    quantity: "500 g",
+    name: 'Sooji Ordinary/Bombay Rava',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/1213922_1-bb-royal-sooji-ordinarybombay-rava.jpg?tr=w-3840,q=80',
+    finalPrice: '₹265',
+    strikedOffPrice: '₹325',
+    quantity: '500 g',
     qty: 1,
     inCart: false,
     offer: "18% OFF",
   },
   {
     productId: 12,
-    name: "Maida",
-    imgSrc:
-      "https://www.bigbasket.com/media/uploads/p/m/40052960_16-horlicks-womens-plus-chocolate.jpg?tr=w-3840,q=80",
-    finalPrice: "₹255",
-    strikedOffPrice: "₹300",
-    quantity: "500 g",
+    name: 'Maida',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/1213921_1-bb-royal-maida.jpg?tr=w-3840,q=80',
+    finalPrice: '₹255',
+    strikedOffPrice: '₹300',
+    quantity: '500 g',
     qty: 1,
     inCart: false,
     offer: "15% OFF",
   },
   {
     productId: 13,
-    name: "Multigrain Atta/Ghau Peeth - Fortified",
-    imgSrc:
-      "https://www.bigbasket.com/media/uploads/p/m/170752_8-horlicks-lite-health-nutrition-drink-regular-malt-flavour.jpg?tr=w-3840,q=80",
-    finalPrice: "₹273",
-    strikedOffPrice: "₹330",
-    quantity: "500 g - Pouch",
+    name: 'Multigrain Atta/Ghau Peeth - Fortified',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40189432_2-bb-royal-multigrain-atta-fortified.jpg?tr=w-3840,q=80',
+    finalPrice: '₹273',
+    strikedOffPrice: '₹330',
+    quantity: '500 g - Pouch',
     qty: 1,
     inCart: false,
     offer: "17% OFF",
   },
   {
     productId: 14,
-    name: "Wheat Dalia/Lapsi rava",
-    imgSrc:
-      "https://www.bigbasket.com/media/uploads/p/m/162275_17-bournvita-chocolate-health-drink-bournvita.jpg?tr=w-3840,q=80",
-    finalPrice: "₹53",
-    strikedOffPrice: "₹80",
-    quantity: "500 g - Pouch",
+    name: 'Wheat Dalia/Lapsi rava',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40026597_6-bb-royal-wheat-brokendalia.jpg?tr=w-3840,q=80',
+    finalPrice: '₹53',
+    strikedOffPrice: '₹80',
+    quantity: '500 g - Pouch',
     qty: 1,
     inCart: false,
     offer: "34% OFF",
   },
   {
     productId: 15,
-    name: "Almond Flour - 100% Natural, Keto-Friendly, Gluten Free",
-    imgSrc:
-      "https://www.bigbasket.com/media/uploads/p/m/20005341_6-horlicks-health-nutrition-drink-chocolate-flavour.jpg?tr=w-3840,q=80",
-    finalPrice: "₹545",
-    strikedOffPrice: "₹745",
-    quantity: "500 g - Pouch",
+    name: 'Almond Flour - 100% Natural, Keto-Friendly, Gluten Free',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40255376_2-jiwa-almond-flour-keto-friendly-gluten-free-100-natural.jpg?tr=w-3840,q=80',
+    finalPrice: '₹545',
+    strikedOffPrice: '₹745',
+    quantity: '500 g - Pouch',
     qty: 1,
     inCart: false,
     offer: "27% OFF",
   },
   {
     productId: 16,
-    name: "Atta/Ghau Peeth - Chakki Fresh",
-    imgSrc:
-      "https://www.bigbasket.com/media/uploads/p/m/305792_12-protinex-health-nutritional-drink-vanilla-delight-flavour.jpg?tr=w-3840,q=80",
-    finalPrice: "₹448",
-    strikedOffPrice: "₹551",
-    quantity: "750 g",
+    name: 'Atta/Ghau Peeth - Chakki Fresh',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/124657_8-pillsbury-atta-chakki-fresh.jpg?tr=w-3840,q=80',
+    finalPrice: '₹448',
+    strikedOffPrice: '₹551',
+    quantity: '750 g',
     qty: 1,
     inCart: false,
     offer: "19% OFF",
   },
   {
     productId: 17,
-    name: "Sugar Release Control Atta/Ghau Peeth",
-    imgSrc:
-      "https://www.bigbasket.com/media/uploads/p/m/269603_9-complan-nutrition-health-drink-improves-concentration-memory-royale-chocolate-flavour.jpg?tr=w-3840,q=80",
-    finalPrice: "₹359.45",
-    strikedOffPrice: "₹395",
-    quantity: "500 g",
+    name: 'Sugar Release Control Atta/Ghau Peeth',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40077103_7-aashirvaad-sugar-release-control-atta.jpg?tr=w-3840,q=80',
+    finalPrice: '₹359.45',
+    strikedOffPrice: '₹395',
+    quantity: '500 g',
     qty: 1,
     inCart: false,
     offer: "₹36 OFF",
   },
   {
     productId: 18,
-    name: "Organic - Jowar Flour/Jower Peeth",
-    imgSrc:
-      "https://www.bigbasket.com/media/uploads/p/m/40126617_8-bournvita-chocolate-health-drink-5-star-magic.jpg?tr=w-3840,q=80",
-    finalPrice: "₹72",
-    strikedOffPrice: "₹90",
-    quantity: "500 g",
+    name: 'Organic - Jowar Flour/Jower Peeth',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40125920_6-bb-royal-organic-jowar-flour.jpg?tr=w-3840,q=80',
+    finalPrice: '₹72',
+    strikedOffPrice: '₹90',
+    quantity: '500 g',
     qty: 1,
     inCart: false,
     offer: "20% OFF",
   },
   {
     productId: 19,
-    name: "Maida",
-    imgSrc:
-      "https://www.bigbasket.com/media/uploads/p/m/40136118_8-nestle-nangrow-nutritious-milk-drink-for-growing-children-creamy-vanilla.jpg?tr=w-3840,q=80",
-    finalPrice: "₹53",
-    strikedOffPrice: "₹55",
-    quantity: "500 g",
+    name: 'Maida',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40159986_4-super-saver-maida.jpg?tr=w-3840,q=80',
+    finalPrice: '₹53',
+    strikedOffPrice: '₹55',
+    quantity: '500 g',
     qty: 1,
     inCart: false,
     offer: "4% OFF",
   },
   {
     productId: 20,
-    name: "Rice Flour/Tandool Pith",
-    imgSrc:
-      "https://www.bigbasket.com/media/uploads/p/m/272456_19-horlicks-womens-plus-chocolate.jpg?tr=w-3840,q=80",
-    finalPrice: "₹49",
-    strikedOffPrice: "₹60",
-    quantity: "500 g - Pouch",
+    name: 'Rice Flour/Tandool Pith',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/10000458_11-bb-royal-rice-flour.jpg?tr=w-3840,q=80',
+    finalPrice: '₹49',
+    strikedOffPrice: '₹60',
+    quantity: '500 g - Pouch',
     qty: 1,
     inCart: false,
-    offer: "18% OFF",
+    offer: '18% OFF'
+  }
+]
+
+var snacks =[
+  {
+    productId: 1,
+    name: 'Dark Fantasy - Big Choco Fills, Crunchy Cookies, Filled With Choco Crème',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40001343_4-sunfeast-dark-fantasy-cookies-big-choco-fills.jpg?tr=w-3840,q=80',
+    finalPrice: '₹67.5',
+    strikedOffPrice: '₹75',
+    quantity: '950 g',
+    qty: 1,
+    inCart: false,
+    offer: '10% OFF'
   },
-];
+  {
+    productId: 2,
+    name: 'Digestive High Fibre Biscuits - Made From Whole Wheat & Bran, Healthy Snack',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40197803_4-britannia-nutrichoice-digestive-high-fibre-biscuits-super-saver-family-pack.jpg?tr=w-3840,q=80',
+    finalPrice: '₹179.1',
+    strikedOffPrice: '₹199',
+    quantity: '800 g - Pack',
+    qty: 1,
+    inCart: false,
+    offer: '₹20 OFF'
+  },
+  {
+    productId: 3,
+    name: 'Gluco Biscuits - Parle-G',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/102102_4-parle-gluco-biscuits-parle-g.jpg?tr=w-3840,q=80',
+    finalPrice: '₹85',
+    strikedOffPrice: '₹90',
+    quantity: '253 g',
+    qty: 1,
+    inCart: false,
+    offer: '6% OFF'
+  },
+  {
+    productId: 4,
+    name: 'Marie Gold Biscuit - Crunchy, Light, Zero Trans Fat, Ready To Eat',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40197801_7-britannia-marie-gold-biscuits.jpg?tr=w-3840,q=80',
+    finalPrice: '₹116',
+    strikedOffPrice: '₹140',
+    quantity: '50 g - Pouch',
+    qty: 1,
+    inCart: false,
+    offer: '17% OFF'
+  },
+  {
+    productId: 5,
+    name: '5 Seed Digestive Biscuit - High Fibre, Goodness Of 5 Power Seeds & Wheat Fibre',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40167570_2-sunfeast-farmlite-digestive-high-fibre-biscuits.jpg?tr=w-3840,q=80',
+    finalPrice: '₹100',
+    strikedOffPrice: '₹200',
+    quantity: '450 g - (Pack of 6)',
+    qty: 1,
+    inCart: false,
+    offer: '50% OFF'
+  },
+  {
+    productId: 6,
+    name: 'Dark Fantasy - Yumfills, Rich Chocolate Pie Cake',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40110218_2-sunfeast-choco-pie-dark-fantasy-yumfills-pie.jpg?tr=w-3840,q=80',
+    finalPrice: '₹85',
+    strikedOffPrice: '₹170',
+    quantity: '585 g - (Buy 4 Get 1 Extra)',
+    qty: 1,
+    inCart: false,
+    offer: '50% OFF'
+  },
+  {
+    productId: 7,
+    name: 'Dark Fantasy - Choco Fills, Original Filled Cookies, With Choco Crème',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40077104_4-sunfeast-dark-fantasy-biscuits-cookies-choco-fills.jpg?tr=w-3840,q=80',
+    finalPrice: '₹115.6',
+    strikedOffPrice: '₹170',
+    quantity: '600 g',
+    qty: 1,
+    inCart: false,
+    offer: '32% OFF'
+  },
+  {
+    productId: 8,
+    name: 'Choco Pie - With Rich Marshmallow, Premium, Original, Sweet & Savoury',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/189909_7-lotte-choco-pie.jpg?tr=w-3840,q=80',
+    finalPrice: '₹155',
+    strikedOffPrice: '₹170',
+    quantity: '75 g - (Pack of 10)',
+    qty: 1,
+    inCart: false,
+    offer: '₹15 OFF'
+  },
+  {
+    productId: 9,
+    name: '5 Grain Digestive Multigrain Biscuits - High Fibre, With Honey, Healthy Snack',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/263575_9-britannia-nutrichoice-5-grain-digestive-high-fibre-multigrain-biscuits.jpg?tr=w-3840,q=80',
+    finalPrice: '₹61.5',
+    strikedOffPrice: '₹75',
+    quantity: '75 g - Pouch',
+    qty: 1,
+    inCart: false,
+    offer: '18% OFF'
+  },
+  {
+    productId: 10,
+    name: 'Dark Fantasy - Bourbon, Classic Biscuit, Made With Real Chocolate',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40077089_9-sunfeast-dark-fantasy-bourbon-chocolate-cream-biscuits.jpg?tr=w-3840,q=80',
+    finalPrice: '₹36',
+    strikedOffPrice: '₹40',
+    quantity: '200 g',
+    qty: 1,
+    inCart: false,
+    offer: '10% OFF'
+  },
+  {
+    productId: 11,
+    name: 'Tiger Krunch Biscuits',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40197807_4-britannia-tiger-krunch-biscuits.jpg?tr=w-3840,q=80',
+    finalPrice: '₹70',
+    strikedOffPrice: '₹140',
+    quantity: '1 kg - Pouch',
+    qty: 1,
+    inCart: false,
+    offer: '50% OFF'
+  },
+  {
+    productId: 12,
+    name: 'Marie Gold Biscuits',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/220244_6-britannia-marie-gold-biscuits.jpg?tr=w-3840,q=80',
+    finalPrice: '₹35',
+    strikedOffPrice: '₹40',
+    quantity: '120 g',
+    qty: 1,
+    inCart: false,
+    offer: '13% OFF'
+  },
+  {
+    productId: 13,
+    name: 'Digestive Zero Biscuits - No Maida & Zero Added Sugar, Made From Whole Wheat, Fibre Rich',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40086304_8-britannia-nutrichoice-digestive-zero-high-fibre-biscuits.jpg?tr=w-3840,q=80',
+    finalPrice: '₹26',
+    strikedOffPrice: '₹35',
+    quantity: '1 Kg',
+    qty: 1,
+    inCart: false,
+    offer: '26% OFF'
+  },
+  {
+    productId: 14,
+    name: 'Bourbon - The Original Choco Creme Sandwich Biscuit',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/263593_14-britannia-bourbon-chocolate-cream-biscuits.jpg?tr=w-3840,q=80',
+    finalPrice: '₹31.5',
+    strikedOffPrice: '₹40',
+    quantity: '959.1 g - (5 N x 191.82 g each)',
+    qty: 1,
+    inCart: false,
+    offer: '21% OFF'
+  },
+  {
+    productId: 15,
+    name: 'Bourbon - The Original Choco Creme Sandwich Biscuit',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/100012354_22-britannia-bourbon-chocolate-cream-biscuits.jpg?tr=w-3840,q=80',
+    finalPrice: '₹9.5',
+    strikedOffPrice: '₹10',
+    quantity: '400 g',
+    qty: 1,
+    inCart: false,
+    offer: '5% OFF'
+  },
+  {
+    productId: 16,
+    name: 'Assorted Cookies',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40022399_2-unibic-cookies-assorted-pack.jpg?tr=w-3840,q=80',
+    finalPrice: '₹135',
+    strikedOffPrice: '₹180',
+    quantity: '46.3 g',
+    qty: 1,
+    inCart: false,
+    offer: '25% OFF'
+  },
+  {
+    productId: 17,
+    name: 'Marie Gold Biscuit - Crunchy, Light, Ready To Eat',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40083745_5-britannia-biscuits-combo-marie-biscuit.jpg?tr=w-3840,q=80',
+    finalPrice: '₹88',
+    strikedOffPrice: '₹88',
+    quantity: '200 g - Pouch',
+    qty: 1,
+    inCart: false,
+    offer: '₹13 OFF'
+  },
+  {
+    productId: 18,
+    name: 'Good Day Cashew Cookies,(Pack of 5)',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40083744_6-britannia-good-day-cashew-cookies.jpg?tr=w-3840,q=80',
+    finalPrice: '₹117',
+    strikedOffPrice: '₹130',
+    quantity: '67 g',
+    qty: 1,
+    inCart: false,
+    offer: '5% OFF'
+  },
+  {
+    productId: 19,
+    name: 'Farmlite Biscuit - Cookies Oats & Almonds',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40007921_10-sunfeast-farmlite-biscuit-cookies-oats-almonds.jpg?tr=w-3840,q=80',
+    finalPrice: '₹61.75',
+    strikedOffPrice: '₹65',
+    quantity: '52.2 g - (Get 5.8 g Extra)',
+    qty: 1,
+    inCart: false,
+    offer: '30% OFF'
+  },
+  {
+    productId: 20,
+    name: 'Cookies - Assorted Flavours, Tasty Teatime Snack',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40246054_1-unibic-cookies-assorted-flavours-tasty-teatime-snack.jpg?tr=w-3840,q=80',
+    finalPrice: '₹210',
+    strikedOffPrice: '₹300',
+    quantity: '300 g',
+    qty: 1,
+    inCart: false,
+    offer: '10% OFF'
+  }
+]
+
+
+var cleaning =[
+  {
+    productId: 1,
+    name: 'Disinfectant Toilet Cleaner Liquid, Original',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/263754_15-harpic-power-plus-disinfectant-toilet-cleaner-liquid-original.jpg?tr=w-3840,q=80',
+    finalPrice: '₹94',
+    strikedOffPrice: '₹99',
+    quantity: '500 ml',
+    qty: 1,
+    inCart: false,
+    offer: '5% OFF'
+  },
+  {
+    productId: 2,
+    name: 'Disinfectant Bathroom Cleaner Liquid, Lemon',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40081006_11-harpic-disinfectant-bathroom-cleaner-liquid-lemon.jpg?tr=w-3840,q=80',
+    finalPrice: '₹176',
+    strikedOffPrice: '₹199',
+    quantity: '1 L',
+    qty: 1,
+    inCart: false,
+    offer: '12% OFF'
+  },
+  {
+    productId: 3,
+    name: 'White & Shine Disinfectant Toilet Cleaner Bleach',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/263760_8-harpic-disinfectant-toilet-cleaner-white-shine-bleach.jpg?tr=w-3840,q=80',
+    finalPrice: '₹99.22',
+    strikedOffPrice: '₹105',
+    quantity: '26 g',
+    qty: 1,
+    inCart: false,
+    offer: '₹6 OFF'
+  },
+  {
+    productId: 4,
+    name: 'Liquid Disinfectant Cleaner for Home - Lime Fresh',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/1212007_5-dettol-liquid-disinfectant-cleaner-for-home-lime-fresh.jpg?tr=w-3840,q=80',
+    finalPrice: '₹363.03',
+    strikedOffPrice: '₹424.6',
+    quantity: '1050 ml - + 500 ml Free',
+    qty: 1,
+    inCart: false,
+    offer: '15% OFF'
+  },
+  {
+    productId: 5,
+    name: 'Disinfectant Surface & Floor Cleaner Liquid - Sandal',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/295829_10-lizol-disinfectant-surface-floor-cleaner-liquid-sandal-kills-999-germs.jpg?tr=w-3840,q=80',
+    finalPrice: '₹103',
+    strikedOffPrice: '₹110',
+    quantity: '50 g - (Pack of 6)',
+    qty: 1,
+    inCart: false,
+    offer: '₹7 OFF'
+  },
+  {
+    productId: 6,
+    name: 'Glass & Surface Cleaner Liquid Spray, Regular',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/263819_15-colin-glass-cleaner-liquid-spray-bottle-cleans-mirror-car-home-appliances.jpg?tr=w-3840,q=80',
+    finalPrice: '₹88',
+    strikedOffPrice: '₹96',
+    quantity: '500 ml',
+    qty: 1,
+    inCart: false,
+    offer: '8% OFF'
+  },
+  {
+    productId: 7,
+    name: 'Germ Protection Multipurpose Thick, Soft, Wet Wipes - With Fliptop Lid',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/1220479_1-savlon-germ-protection-multipurpose-thick-soft-wet-wipes-with-fliptop-lid.jpg?tr=w-3840,q=80',
+    finalPrice: '₹344.28',
+    strikedOffPrice: '₹378',
+    quantity: '1 L',
+    qty: 1,
+    inCart: false,
+    offer: '₹34 OFF'
+  },
+  {
+    productId: 8,
+    name: 'Surface Disinfectant Spray',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/1212019_1-savlon-surface-disinfectant-spray.jpg?tr=w-3840,q=80',
+    finalPrice: '₹245.03',
+    strikedOffPrice: '₹330',
+    quantity: '26 g',
+    qty: 1,
+    inCart: false,
+    offer: '26% OFF'
+  },
+  {
+    productId: 9,
+    name: 'Disinfectant Surface & Floor Cleaner Liquid - Lavender',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/260936_13-lizol-disinfectant-surface-floor-cleaner-liquid-lavender-kills-999-germs.jpg?tr=w-3840,q=80',
+    finalPrice: '₹426.8',
+    strikedOffPrice: '₹440',
+    quantity: '1050 ml - + 500 ml Free',
+    qty: 1,
+    inCart: false,
+    offer: '₹13 OFF'
+  },
+  {
+    productId: 10,
+    name: 'Germ & Stain Blaster Disinfectant Toilet Cleaner Liquid, Citrus',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40068284_8-harpic-germ-stain-blaster-disinfectant-toilet-cleaner-liquid-citrus.jpg?tr=w-3840,q=80',
+    finalPrice: '₹140',
+    strikedOffPrice: '₹175',
+    quantity: '50 g - (Pack of 6)',
+    qty: 1,
+    inCart: false,
+    offer: '20% OFF'
+  },
+  {
+    productId: 11,
+    name: 'Glass & Surface Cleaner Liquid, Refill',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40174606_9-colin-glass-cleaner-liquid-refill-pack-cleans-mirror-car-home-appliances.jpg?tr=w-3840,q=80',
+    finalPrice: '₹165',
+    strikedOffPrice: '₹176',
+    quantity: '500 ml',
+    qty: 1,
+    inCart: false,
+    offer: '₹11 OFF'
+  },
+  {
+    productId: 12,
+    name: 'Hygienic Toilet Cleaner Rim Block, Citrus',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/30006623_12-harpic-hygienic-toilet-rim-block-citrus.jpg?tr=w-3840,q=80',
+    finalPrice: '₹78.3',
+    strikedOffPrice: '₹87',
+    quantity: '1 L',
+    qty: 1,
+    inCart: false,
+    offer: '10% OFF'
+  },
+  {
+    productId: 13,
+    name: 'Disinfectant Liquid Floor/Surface Cleaner - Provides Protection From Germs, Menthol Cool',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40114369_13-dettol-disinfectant-liquid-floorsurface-cleaner-provides-protection-from-germs-menthol-cool.jpg?tr=w-3840,q=80',
+    finalPrice: '₹173.7',
+    strikedOffPrice: '₹193',
+    quantity: '26 g',
+    qty: 1,
+    inCart: false,
+    offer: '₹19 OFF'
+  },
+  {
+    productId: 14,
+    name: 'Disinfectant Floor Cleaner',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/281397_7-domex-disinfectant-floor-cleaner.jpg?tr=w-3840,q=80',
+    finalPrice: '₹195',
+    strikedOffPrice: '₹220',
+    quantity: '1050 ml - + 500 ml Free',
+    qty: 1,
+    inCart: false,
+    offer: '11% OFF'
+  },
+  {
+    productId: 15,
+    name: 'Disinfectant Kitchen Power Cleaner Liquid Spray - Orange',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40129071_6-lizol-kitchen-power-cleaner-liquid-spray-kills-999-germs.jpg?tr=w-3840,q=80',
+    finalPrice: '₹131.12',
+    strikedOffPrice: '₹149',
+    quantity: '50 g - (Pack of 6)',
+    qty: 1,
+    inCart: false,
+    offer: '12% OFF'
+  },
+  {
+    productId: 16,
+    name: 'Disinfectant Surface & Floor Cleaner Liquid - Jasmine',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/281394_13-lizol-disinfectant-surface-floor-cleaner-liquid-jasmine-kills-999-germs.jpg?tr=w-3840,q=80',
+    finalPrice: '₹213.4',
+    strikedOffPrice: '₹220',
+    quantity: '500 ml',
+    qty: 1,
+    inCart: false,
+    offer: '₹7 OFF'
+  },
+  {
+    productId: 17,
+    name: 'Toilet Cleaner - Fresh Guard, Lime Fresh',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40125581_6-domex-fresh-guard-disinfectant-toilet-cleaner-liquid-lime-fresh.jpg?tr=w-3840,q=80',
+    finalPrice: '₹215',
+    strikedOffPrice: '₹215',
+    quantity: '1 L',
+    qty: 1,
+    inCart: false,
+    offer: '₹4 OFF'
+  },
+  {
+    productId: 18,
+    name: 'Disinfectant Surface & Floor Cleaner Liquid - Pine',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/1200365_10-lizol-disinfectant-floor-cleaner-liquid-pine-kills-999-germs.jpg?tr=w-3840,q=80',
+    finalPrice: '₹215.6',
+    strikedOffPrice: '₹220',
+    quantity: '26 g',
+    qty: 1,
+    inCart: false,
+    offer: '10% OFF'
+  },
+  {
+    productId: 19,
+    name: 'Hygienic Toilet Cleaner Rim Block, Lavender',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/270222_12-harpic-hygienic-toilet-rim-block-lavender.jpg?tr=w-3840,q=80',
+    finalPrice: '₹78.3',
+    strikedOffPrice: '₹87',
+    quantity: '1050 ml - + 500 ml Free',
+    qty: 1,
+    inCart: false,
+    offer: '₹9 OFF'
+  },
+  {
+    productId: 20,
+    name: 'Disinfectant Bathroom Cleaner Liquid, Floral',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40017766_14-harpic-disinfectant-bathroom-cleaner-liquid-floral.jpg?tr=w-3840,q=80',
+    finalPrice: '₹96',
+    strikedOffPrice: '₹105',
+    quantity: '50 g - (Pack of 6)',
+    qty: 1,
+    inCart: false,
+    offer: '10% OFF'
+  }
+]
+
+var beauty =[
+  {
+    productId: 1,
+    name: 'Just Herbs Ayurvedic Matte Lipstick Micro-Mini Trial Kit Set Of 16',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40261388_1-just-herbs-just-herbs-ayurvedic-matte-lipstick-micro-mini-trial-kit-set-of-16.jpg?tr=w-3840,q=80',
+    finalPrice: '₹431',
+    strikedOffPrice: '₹575',
+    quantity: '1.93gm',
+    qty: 1,
+    inCart: false,
+    offer: '25% OFF'
+  },
+  
+  {
+    productId: 12,
+    name: 'Face Fwd Contour Stick - Coffee Brown, Long Lasting',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40239415_1-sugar-cosmetics-face-fwd-contour-stick-coffee-brown-long-lasting.jpg?tr=w-3840,q=80',
+    finalPrice: '₹679.15',
+    strikedOffPrice: '₹799',
+    quantity: '5 ml - 01 Black With A Bang',
+    qty: 1,
+    inCart: false,
+    offer: '15% OFF'
+  },
+  {
+    productId: 13,
+    name: 'Manicure Pedicure Kit - Colour May Vary',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40172300_5-bronson-professional-manicure-pedicure-kit-colour-may-vary.jpg?tr=w-3840,q=80',
+    finalPrice: '₹150',
+    strikedOffPrice: '₹250',
+    quantity: '8 g',
+    qty: 1,
+    inCart: false,
+    offer: '40% OFF'
+  },
+  {
+    productId: 14,
+    name: 'Zoom & Whoosh Mascara - Black',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40037522_7-colorbar-zoom-whoosh-mascara-black.jpg?tr=w-3840,q=80',
+    finalPrice: '₹422.5',
+    strikedOffPrice: '₹650',
+    quantity: '12 g',
+    qty: 1,
+    inCart: false,
+    offer: '35% OFF'
+  },
+  {
+    productId: 15,
+    name: "MyGlamm POPxo Makeup Collection -Mini Nail Kit-Dreamin'-15ml",
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40257394_1-myglamm-myglamm-popxo-makeup-collection-mini-nail-kit-dreamin-15ml.jpg?tr=w-3840,q=80',
+    finalPrice: '₹166.83',
+    strikedOffPrice: '₹249',
+    quantity: '1.93gm',
+    qty: 1,
+    inCart: false,
+    offer: '33% OFF'
+  },
+  {
+    productId: 16,
+    name: 'Mini Makeup Brushes - Colour May Vary',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40148733_1-bronson-professional-mini-makeup-brushes-colour-may-vary.jpg?tr=w-3840,q=80',
+    finalPrice: '₹285',
+    strikedOffPrice: '₹360',
+    quantity: '6 ml - Very Black',
+    qty: 1,
+    inCart: false,
+    offer: '21% OFF'
+  },
+  {
+    productId: 17,
+    name: 'Hi- Definition Volumising Mascara',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40203455_1-bella-voste-hi-definition-volumising-mascara.jpg?tr=w-3840,q=80',
+    finalPrice: '₹174.3',
+    strikedOffPrice: '₹249',
+    quantity: '15 ml',
+    qty: 1,
+    inCart: false,
+    offer: '30% OFF'
+  },
+  {
+    productId: 18,
+    name: 'Matte Melt Liquid Lip Colour - With Rosehip Oil, Long Lasting, Moisturising',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40176740_5-lakme-matte-melt-liquid-lip-colour-with-rosehip-oil-long-lasting-moisturising.jpg?tr=w-3840,q=80',
+    finalPrice: '₹640',
+    strikedOffPrice: '₹800',
+    quantity: '24 pcs',
+    qty: 1,
+    inCart: false,
+    offer: '20% OFF'
+  },
+  {
+    productId: 19,
+    name: 'All Weather Mascara',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40153546_5-gala-of-london-all-weather-mascara.jpg?tr=w-3840,q=80',
+    finalPrice: '₹84.15',
+    strikedOffPrice: '₹99',
+    quantity: '7 pcs',
+    qty: 1,
+    inCart: false,
+    offer: '15% OFF'
+  },
+  {
+    productId: 20,
+    name: 'Powder Brush - Helps To Apply & Blend Makeup, B102135',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40247092_1-boujee-beauty-powder-brush-helps-to-apply-blend-makeup-b102135.jpg?tr=w-3840,q=80',
+    finalPrice: '₹337.5',
+    strikedOffPrice: '₹450',
+    quantity: '9.5 g',
+    qty: 1,
+    inCart: false,
+    offer: '25% OFF'
+  }
+]
+
+
+var household =[
+  {
+    productId: 1,
+    name: 'Fruit & Vegetable Refrigerator Net Bag Set - Maintains Freshness, Medium',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40258747_2-iris-fruit-vegetable-refrigerator-net-bag-set-maintains-freshness-medium.jpg?tr=w-3840,q=80',
+    finalPrice: '₹75',
+    strikedOffPrice: '₹110',
+    quantity: '12 pcs',
+    qty: 1,
+    inCart: false,
+    offer: '32% OFF'
+  },
+  {
+    productId: 2,
+    name: 'Plastic Food Bag Clips - Multicoloured, Maintain The Hygiene & Freshness Of Your Food',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40241883_1-swastik-housewares-plastic-food-bag-clips-multicoloured-maintain-the-hygiene-freshness-of-your-food.jpg?tr=w-3840,q=80',
+    finalPrice: '₹85',
+    strikedOffPrice: '₹99',
+    quantity: '4 pcs',
+    qty: 1,
+    inCart: false,
+    offer: '14% OFF'
+  },
+  {
+    productId: 3,
+    name: 'Small Jars Set With Blue Printed Lids',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40207577_3-yera-small-jars-set-with-printed-lids.jpg?tr=w-3840,q=80',
+    finalPrice: '₹89',
+    strikedOffPrice: '₹150',
+    quantity: '280 ml - (Set of 2)',
+    qty: 1,
+    inCart: false,
+    offer: '41% OFF'
+  },
+  {
+    productId: 4,
+    name: 'Jars - Plain Design,Printed Lid, Round, High Quality, Sturdy',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40207567_4-yera-printed-lid-jars-plain-design-round.jpg?tr=w-3840,q=80',
+    finalPrice: '₹99',
+    strikedOffPrice: '₹120',
+    quantity: '200 ml - (Set of 4)',
+    qty: 1,
+    inCart: false,
+    offer: '18% OFF'
+  },
+  {
+    productId: 5,
+    name: 'Glass Jar With Printed Lid - Easy To Clean, Leak Proof, Small',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40207576_4-yera-glass-jars-with-printed-lids-small-200-ml.jpg?tr=w-3840,q=80',
+    finalPrice: '₹119',
+    strikedOffPrice: '₹150',
+    quantity: '600 ml',
+    qty: 1,
+    inCart: false,
+    offer: '21% OFF'
+  },
+  {
+    productId: 6,
+    name: 'Casserole - Used For Roti/Chapati, Dishwasher Safe, Mehandi Green',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40129297_7-asian-casserole-for-roti-chapati-cosmos-green.jpg?tr=w-3840,q=80',
+    finalPrice: '₹149',
+    strikedOffPrice: '₹192',
+    quantity: '435 ml - (Set of 2)',
+    qty: 1,
+    inCart: false,
+    offer: '22% OFF'
+  },
+  {
+    productId: 7,
+    name: 'Click N Seal Canister Microwaveable Plastic Container - L5901-VL',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/1213376_1-princeware-click-n-seal-canister-microwaveable-plastic-container-l5901-vl.jpg?tr=w-3840,q=80',
+    finalPrice: '₹72.52',
+    strikedOffPrice: '₹190',
+    quantity: '780 ml',
+    qty: 1,
+    inCart: false,
+    offer: '62% OFF'
+  },
+  {
+    productId: 8,
+    name: 'Glass Bowl - With Lid, Polo, High Quality, Sturdy',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40183521_10-yera-glass-bowl-with-lid-polo.jpg?tr=w-3840,q=80',
+    finalPrice: '₹149',
+    strikedOffPrice: '₹185',
+    quantity: '100 ml - (Set of 3)',
+    qty: 1,
+    inCart: false,
+    offer: '19% OFF'
+  },
+  {
+    productId: 9,
+    name: 'Solar Insulated Plastic With Inner Steel Casserole - For Roti/Chapati, Pink - Small',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40278608_1-princeware-solar-insulated-plastic-with-inner-steel-casserole-for-rotichapati-pink.jpg?tr=w-3840,q=80',
+    finalPrice: '₹119',
+    strikedOffPrice: '₹298',
+    quantity: '1 pc',
+    qty: 1,
+    inCart: false,
+    offer: '60% OFF'
+  },
+  {
+    productId: 10,
+    name: '4 Side Lock Containers 9001 - Plain, Transparent, Durable, Leak-proof, Air Tight',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40268060_4-joyo-plastics-4-side-lock-containers-9001-plain-transparent-durable-leak-proof-air-tight.jpg?tr=w-3840,q=80',
+    finalPrice: '₹99',
+    strikedOffPrice: '₹165',
+    quantity: '2.5 L',
+    qty: 1,
+    inCart: false,
+    offer: '40% OFF'
+  },
+  {
+    productId: 11,
+    name: 'LED Bulb - Astron Plus 10W With B22 Base, Cool Day White',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40226807_2-halonix-led-bulb-astron-plus-10w-with-b22-base-cool-day-white.jpg?tr=w-3840,q=80',
+    finalPrice: '₹69',
+    strikedOffPrice: '₹199',
+    quantity: '1 pc',
+    qty: 1,
+    inCart: false,
+    offer: '65% OFF'
+  },
+  {
+    productId: 12,
+    name: 'Mapple Plastic Bread Box Plastic Container - Assorted Color',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40199982_2-polyset-mapple-plastic-bread-box-plastic-container-assorted-color.jpg?tr=w-3840,q=80',
+    finalPrice: '₹75',
+    strikedOffPrice: '₹129',
+    quantity: '1 pc',
+    qty: 1,
+    inCart: false,
+    offer: '42% OFF'
+  },
+  {
+    productId: 13,
+    name: 'Mini Chopper With 3 Blades - For Cutting Vegetables & Fruits, Red, 1 pc',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40213324_4-wellberg-mini-chopper-with-3-blades-for-cutting-vegetables-fruits-red-1-pc.jpg?tr=w-3840,q=80',
+    finalPrice: '₹149',
+    strikedOffPrice: '₹595',
+    quantity: '4 pcs',
+    qty: 1,
+    inCart: false,
+    offer: '75% OFF'
+  },
+  {
+    productId: 14,
+    name: 'Click N Seal Square Microwaveable Plastic Container - L5945-VL',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40004673_4-princeware-click-n-seal-square-microwaveable-plastic-container-l5945-vl.jpg?tr=w-3840,q=80',
+    finalPrice: '₹169',
+    strikedOffPrice: '₹358',
+    quantity: '210 ml - (Set of 5)',
+    qty: 1,
+    inCart: false,
+    offer: '53% OFF'
+  },
+  {
+    productId: 15,
+    name: 'USB Copper String Lights - 3 M 30 LEDs Warm White',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40228608_4-mansaa-usb-copper-string-lights-5-m30-leds-warm-whitefor-festive-decorations-lighting.jpg?tr=w-3840,q=80',
+    finalPrice: '₹99',
+    strikedOffPrice: '₹399',
+    quantity: '380 ml',
+    qty: 1,
+    inCart: false,
+    offer: '75% OFF'
+  },
+  {
+    productId: 16,
+    name: 'Flora Dryfruit Plastic Dabba/Container Set - BPA-Free, Green',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40225632_2-asian-flora-dryfruit-plastic-dabbacontainer-set-bpa-free-green.jpg?tr=w-3840,q=80',
+    finalPrice: '₹149',
+    strikedOffPrice: '₹230',
+    quantity: '60 ml - (Set of 6)',
+    qty: 1,
+    inCart: false,
+    offer: '35% OFF'
+  },
+  {
+    productId: 17,
+    name: 'Keeper Container - No.1, Plastic, Durable, BPA Free, For Multipurpose Use, Yellow',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40268907_2-polyset-keeper-container-no1-plastic-durable-bpa-free-for-multipurpose-use-blue.jpg?tr=w-3840,q=80',
+    finalPrice: '₹49',
+    strikedOffPrice: '₹59',
+    quantity: '1 pc',
+    qty: 1,
+    inCart: false,
+    offer: '17% OFF'
+  },
+  {
+    productId: 18,
+    name: 'Ceramic Tea/Coffee/Milk Mug - Yellow & Orange Design, Hand Painted',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40235100_2-bb-home-earth-milk-mug-sunset-orange-hand-painted-design.jpg?tr=w-3840,q=80',
+    finalPrice: '₹109',
+    strikedOffPrice: '₹179',
+    quantity: '5 pcs',
+    qty: 1,
+    inCart: false,
+    offer: '39% OFF'
+  },
+  {
+    productId: 19,
+    name: 'Vogue Shot Glass For Alcohol With Colour Box - Transparent, Functional, Elegant',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40271443_3-soogo-vogue-shot-glass-for-alcohol-with-colour-box-transparent-functional-elegant.jpg?tr=w-3840,q=80',
+    finalPrice: '₹129',
+    strikedOffPrice: '₹245',
+    quantity: '1 pc',
+    qty: 1,
+    inCart: false,
+    offer: '47% OFF'
+  },
+  {
+    productId: 20,
+    name: 'Rice/Vegetables Washing Bowl With Handle - Green, For Multipurpose Use',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40245829_1-trm-ricevegetables-washing-bowl-with-handle-green-for-multipurpose-use.jpg?tr=w-3840,q=80',
+    finalPrice: '₹99',
+    strikedOffPrice: '₹195',
+    quantity: '1 pc',
+    qty: 1,
+    inCart: false,
+    offer: '49% OFF'
+  }
+]
 
 //   hide sort section
 
@@ -871,11 +1859,29 @@ function hideSortSection() {
 
 //   hide sort section end
 
-if (localStorage.getItem("category") == "fruits") {
-  displayProducts(productsObjArr);
-} else {
-  displayProducts(dailyStaples);
-}
+var cat =localStorage.getItem("category");
+
+  if(cat=="fruits"){
+    displayProducts(productsObjArr);
+  }
+  else if(cat=="daily"){
+    displayProducts(dailyStaples);
+  }
+  else if(cat=="beverage"){
+    displayProducts(beveragesObjArr);
+  }
+  else if(cat=="snack"){
+    displayProducts(snacks);
+  }
+  else if(cat=="clean"){
+    displayProducts(cleaning);
+  }
+  else if(cat=="beaut"){
+    displayProducts(beauty);
+  }
+  else if(cat=="homeproducts"){
+    displayProducts(household);
+  }
 
 //   dynamically product-box creation
 
