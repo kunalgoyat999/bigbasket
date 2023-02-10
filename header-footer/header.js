@@ -26,10 +26,6 @@ function submitForm(){
         tag.style.color="red"
         tag.style.fontSize="20px"
     }
-
-    
-
-
     
 }
 
