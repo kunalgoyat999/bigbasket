@@ -20,7 +20,7 @@ applyBtn.addEventListener("click", function () {
   var basketvalue = document.getElementById("basketvalue");
   var total = document.getElementById("tot");
   if (couponCode === "masai30") {
-    basketvalue.textContent -= Number(basketvalue.textContent) * (3 / 10);
+    basketvalue.textContent -= (Number(basketvalue.textContent) * (3 / 10)).toFixed();
     total.textContent -= Number(total.textContent) * (3 / 10);
   } else {
     message.innerHTML = "Invalid coupon code. Please try again.";
