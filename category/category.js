@@ -554,6 +554,229 @@ var productsObjArr=[
   }
 ];
 
+var dailyStaples =[
+  {
+    productId: 1,
+    name: 'Superior-Mp-Sharbati-Atta/Ghau Peeth - Fortified',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40019371_26-bournvita-chocolate-health-drink-bournvita.jpg?tr=w-3840,q=80',
+    finalPrice: '₹499',
+    strikedOffPrice: '₹650',
+    quantity: '500 g - Pouch',
+    qty: 1,
+    inCart: false,
+    offer: '23% OFF'
+  },
+  {
+    productId: 2,
+    name: 'Atta/Ghau Peeth - Whole Wheat',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40117959_5-horlicks-health-nutrition-drink-classic-malt.jpg?tr=w-3840,q=80',
+    finalPrice: '₹470',
+    strikedOffPrice: '₹551',
+    quantity: '750 g',
+    qty: 1,
+    inCart: false,
+    offer: '15% OFF'
+  },
+  {
+    productId: 3,
+    name: 'Atta With 9 Multigrain - High-Fibre & High Protein Soft Rotis, Fortified',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/20005379_8-pediasure-nutritional-powder-complete-balanced-premium-chocolate.jpg?tr=w-3840,q=80',
+    finalPrice: '₹545',
+    strikedOffPrice: '₹650',
+    quantity: '500 g',
+    qty: 1,
+    inCart: false,
+    offer: '16% OFF'
+  },
+  {
+    productId: 4,
+    name: 'Sooji Rawa',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/277866_12-cadbury-powder-mix-hot-chocolate-drink.jpg?tr=w-3840,q=80',
+    finalPrice: '₹38',
+    strikedOffPrice: '₹42',
+    quantity: '500 g',
+    qty: 1,
+    inCart: false,
+    offer: '10% OFF'
+  },
+  {
+    productId: 5,
+    name: 'Atta with Multigrains - High Fibre',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/119385_11-horlicks-health-nutrition-drink-classic-malt.jpg?tr=w-3840,q=80',
+    finalPrice: '₹590.75',
+    strikedOffPrice: '₹695',
+    quantity: '500 g',
+    qty: 1,
+    inCart: false,
+    offer: '15% OFF'
+  },
+  {
+    productId: 6,
+    name: 'Chakki-Fresh-Wheat-Atta/Ghau Peeth - Fortified',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/102830_24-bournvita-chocolate-health-drink-bournvita.jpg?tr=w-3840,q=80',
+    finalPrice: '₹210',
+    strikedOffPrice: '₹290',
+    quantity: '500 g - Pouch',
+    qty: 1,
+    inCart: false,
+    offer: '28% OFF'
+  },
+  {
+    productId: 7,
+    name: 'Chakki-Fresh-Wheat-Atta/Ghau Peeth - Fortified',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/272455_19-horlicks-womens-plus-caramel.jpg?tr=w-3840,q=80',
+    finalPrice: '₹412',
+    strikedOffPrice: '₹550',
+    quantity: '500 g - Pouch',
+    qty: 1,
+    inCart: false,
+    offer: '25% OFF'
+  },
+  {
+    productId: 8,
+    name: 'Roasted Sooji/Rava',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/20005381_8-pediasure-nutritional-powder-complete-balanced-vanilla-delight.jpg?tr=w-3840,q=80',
+    finalPrice: '₹69',
+    strikedOffPrice: '₹80',
+    quantity: '500 g - Pouch',
+    qty: 1,
+    inCart: false,
+    offer: '14% OFF'
+  },
+  {
+    productId: 9,
+    name: 'Organic - Sooji/Rava',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40133416_19-cadbury-chocolate-health-drink-bournvita.jpg?tr=w-3840,q=80',
+    finalPrice: '₹77',
+    strikedOffPrice: '₹88',
+    quantity: '750 g',
+    qty: 1,
+    inCart: false,
+    offer: '13% OFF'
+  },
+  {
+    productId: 10,
+    name: 'Banana Flour - 100% Natural, Resistant Starch, Gluten Free',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40097880_6-protinex-health-nutritional-drink-tasty-chocolate-flavour.jpg?tr=w-3840,q=80',
+    finalPrice: '₹425',
+    strikedOffPrice: '₹545',
+    quantity: '500 g',
+    qty: 1,
+    inCart: false,
+    offer: '22% OFF'
+  },
+  {
+    productId: 11,
+    name: 'Sooji Ordinary/Bombay Rava',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/227052_10-ensure-nutritional-powder-vanilla-flavour.jpg?tr=w-3840,q=80',
+    finalPrice: '₹265',
+    strikedOffPrice: '₹325',
+    quantity: '500 g',
+    qty: 1,
+    inCart: false,
+    offer: '18% OFF'
+  },
+  {
+    productId: 12,
+    name: 'Maida',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40052960_16-horlicks-womens-plus-chocolate.jpg?tr=w-3840,q=80',
+    finalPrice: '₹255',
+    strikedOffPrice: '₹300',
+    quantity: '500 g',
+    qty: 1,
+    inCart: false,
+    offer: '15% OFF'
+  },
+  {
+    productId: 13,
+    name: 'Multigrain Atta/Ghau Peeth - Fortified',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/170752_8-horlicks-lite-health-nutrition-drink-regular-malt-flavour.jpg?tr=w-3840,q=80',
+    finalPrice: '₹273',
+    strikedOffPrice: '₹330',
+    quantity: '500 g - Pouch',
+    qty: 1,
+    inCart: false,
+    offer: '17% OFF'
+  },
+  {
+    productId: 14,
+    name: 'Wheat Dalia/Lapsi rava',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/162275_17-bournvita-chocolate-health-drink-bournvita.jpg?tr=w-3840,q=80',
+    finalPrice: '₹53',
+    strikedOffPrice: '₹80',
+    quantity: '500 g - Pouch',
+    qty: 1,
+    inCart: false,
+    offer: '34% OFF'
+  },
+  {
+    productId: 15,
+    name: 'Almond Flour - 100% Natural, Keto-Friendly, Gluten Free',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/20005341_6-horlicks-health-nutrition-drink-chocolate-flavour.jpg?tr=w-3840,q=80',
+    finalPrice: '₹545',
+    strikedOffPrice: '₹745',
+    quantity: '500 g - Pouch',
+    qty: 1,
+    inCart: false,
+    offer: '27% OFF'
+  },
+  {
+    productId: 16,
+    name: 'Atta/Ghau Peeth - Chakki Fresh',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/305792_12-protinex-health-nutritional-drink-vanilla-delight-flavour.jpg?tr=w-3840,q=80',
+    finalPrice: '₹448',
+    strikedOffPrice: '₹551',
+    quantity: '750 g',
+    qty: 1,
+    inCart: false,
+    offer: '19% OFF'
+  },
+  {
+    productId: 17,
+    name: 'Sugar Release Control Atta/Ghau Peeth',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/269603_9-complan-nutrition-health-drink-improves-concentration-memory-royale-chocolate-flavour.jpg?tr=w-3840,q=80',
+    finalPrice: '₹359.45',
+    strikedOffPrice: '₹395',
+    quantity: '500 g',
+    qty: 1,
+    inCart: false,
+    offer: '₹36 OFF'
+  },
+  {
+    productId: 18,
+    name: 'Organic - Jowar Flour/Jower Peeth',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40126617_8-bournvita-chocolate-health-drink-5-star-magic.jpg?tr=w-3840,q=80',
+    finalPrice: '₹72',
+    strikedOffPrice: '₹90',
+    quantity: '500 g',
+    qty: 1,
+    inCart: false,
+    offer: '20% OFF'
+  },
+  {
+    productId: 19,
+    name: 'Maida',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/40136118_8-nestle-nangrow-nutritious-milk-drink-for-growing-children-creamy-vanilla.jpg?tr=w-3840,q=80',
+    finalPrice: '₹53',
+    strikedOffPrice: '₹55',
+    quantity: '500 g',
+    qty: 1,
+    inCart: false,
+    offer: '4% OFF'
+  },
+  {
+    productId: 20,
+    name: 'Rice Flour/Tandool Pith',
+    imgSrc: 'https://www.bigbasket.com/media/uploads/p/m/272456_19-horlicks-womens-plus-chocolate.jpg?tr=w-3840,q=80',
+    finalPrice: '₹49',
+    strikedOffPrice: '₹60',
+    quantity: '500 g - Pouch',
+    qty: 1,
+    inCart: false,
+    offer: '18% OFF'
+  }
+];
+
 
 //   hide sort section
 
@@ -593,9 +816,17 @@ var productsObjArr=[
   //   hide sort section end
 
 
+  if(localStorage.getItem("category")=="fruits"){
+    displayProducts(productsObjArr);
+  }
+  else{
+    displayProducts(dailyStaples);
+  }
+
+
 //   dynamically product-box creation
 
-displayProducts(productsObjArr);
+// displayProducts(productsObjArr);
 
 function displayProducts(arr){
 

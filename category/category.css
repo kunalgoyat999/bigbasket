@@ -671,14 +671,10 @@ ul{
 
 }
 
-@media (max-width: 1200px) {
-    #shop-by-category{
-        display: none;
-    }
-}
 
 
-@media(max-width: 599px){
+
+@media (max-width: 599px){
 
     #product-box{
         grid-template-columns: repeat(3,minmax(0,1fr));
@@ -693,5 +689,11 @@ ul{
     }
     
 
+}
+
+@media (max-width: 1200px) {
+    #shop-by-category{
+        display: none;
+    }
 }
 
