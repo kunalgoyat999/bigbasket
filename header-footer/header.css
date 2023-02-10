@@ -6,7 +6,6 @@
     display: flex;
     /* display: none; */
     flex-direction: column;
-    
 }
 .upperTop{
     display: flex;
@@ -14,6 +13,8 @@
     margin-right: 175px;
     gap: 40px;
     justify-content: right;
+    margin-top: 5px;
+    color: rgb(167, 157, 157);
 }
 .upperTop p:hover {
     cursor: pointer;
@@ -22,21 +23,16 @@
 .upperTop i{
     margin-right: 7px;
 }
-.arrow {
-    border: solid rgb(111, 110, 110);
-    border-width: 0 0.5px 0.5px 0;
-    display: inline-block;
-    padding: 3px;
-    margin-left: 10px;
-    margin-bottom: 2px;
+.loginBtn{
+    text-decoration: none;
+    color: rgb(167, 157, 157);
 }
-.down {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
+.loginBtn:hover{
+    color: rgb(132,194,37);
 }
 nav{
     display: flex;
-    justify-content: center;
+    align-items: center;
     justify-content: space-around;
     margin-top: -8px;
 }
@@ -45,26 +41,47 @@ nav img{
     margin-left: 26px;
 }
 nav input{
+    /* display: flex; */
     width: 580px;
-    height: 31px;
-    margin-top: 31px;
+    height: 33px;
+    /* margin-top: 31px; */
     margin-left: -330px;
     padding-left: 12px;
+    /* border: none; */
     outline: none;
 }
 
-form.searchBar button{
+input[type="text"],
+a[type="submit"] {
+  height: 35px;
+}
+
+.searchbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 1px solid black;
+}
+/* form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+} */
+form.searchBar a{
     width: 44px;
     height: 35px;
+    /* position: absolute; */
     margin: 0px 0 0 -5px;
-    padding: 7px;
-    padding-top: 5px;
+    padding: 7px 12px 10px 13px;
+    /* padding-top: 5px; */
     border: none;
     background: rgb(132,194,37);
     color: white;
     font-size: 17px;
 }
-form.searchBar button:hover{
+form.searchBar a:hover{
     cursor: pointer;
     background-color: rgb(98, 162, 2);
 }
@@ -142,13 +159,7 @@ nav .basket i{
     color: white;
     background-color: rgb(98, 162, 2);
 }
-.loginBtn{
-    text-decoration: none;
-    color: black;
-}
-.loginBtn:hover{
-    color: rgb(132,194,37);
-}
+
 .overlay{
     width: 100%;
     height: 100vh;
@@ -164,7 +175,7 @@ nav .basket i{
     z-index: 1;
 }
 .loginform{
-    width: 300px;
+    width: 25%;
     background-color: white;
     padding: 50px 35px;
     text-align: center;
@@ -199,6 +210,17 @@ nav .basket i{
     border: none;
     border-bottom: 3px solid green;
 }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .loginform div > button{
     width: 100%;
     height: 55px;
@@ -217,7 +239,7 @@ nav .basket i{
     margin: 15px 0;
     width: 100%;
     height: 55px;
-    padding: 0 111px;
+    /* padding: 0 12rem; */
     text-align: center;
     background-color: rgb(132,194,37);
     color: white;
@@ -431,13 +453,4 @@ nav .basket i{
     .bottom-footer{
         width: 100%;
     }
-}
-
-
-#mid{
-    width: 100%;
-    height: 70vh;
-    background-color: green;
-    text-align: center;
-    color: white;
 }
