@@ -19,28 +19,36 @@ function ontoggle() {
 
 document.getElementById("fruits").addEventListener("click", function(){
     localStorage.setItem("category", "fruits")
+    
+    window.location.href ="category/category.html"
 })
 
 document.getElementById("daily").addEventListener("click", function(){
     localStorage.setItem("category", "daily")
+    window.location.href ="category/category.html"
 })
 
 document.getElementById("beverage").addEventListener("click", function(){
     localStorage.setItem("category", "beverage")
+    window.location.href ="category/category.html"
 })
 
 document.getElementById("snack").addEventListener("click", function(){
     localStorage.setItem("category", "snack")
+    window.location.href ="category/category.html"
 })
 
 document.getElementById("clean").addEventListener("click", function(){
     localStorage.setItem("category", "clean")
+    window.location.href ="category/category.html"
 })
 
 document.getElementById("beaut").addEventListener("click", function(){
     localStorage.setItem("category", "beaut")
+    window.location.href ="category/category.html"
 })
 
 document.getElementById("homeproducts").addEventListener("click", function(){
     localStorage.setItem("category", "homeproducts")
+    window.location.href ="category/category.html"
 })

@@ -1021,7 +1021,15 @@ function displayProducts(arr){
 
     divMain.append(divImgContainer,divIconTime,h3,divPrice,divBtnContainer);
 
+    divMain.addEventListener("click",function(){
+      localStorage.setItem("productDetails", JSON.stringify(arr[i]) )
+    
+      window.location.href ="../product page/product.html"
+    });
+
     li.append(divMain);
+
+
 
     document.getElementById("product-box").append(li);
 
