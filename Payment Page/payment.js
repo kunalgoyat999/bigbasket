@@ -3,9 +3,9 @@ displayamount();
 function displayamount() {
   var basketvalue = document.getElementById("basketvalue");
   var total = document.getElementById("tot");
-  basketvalue.textContent = 50;
+  basketvalue.textContent = " "+ 50;
 
-  total.textContent = +50;
+  total.textContent = " "+ 50;
 }
 
 var couponInput = document.getElementById("coupon-input");
