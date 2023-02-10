@@ -3,6 +3,7 @@
   margin: auto;
   display: flex;
   justify-content: center;
+  margin: 2% auto;
 }
 
 /* Left Div */
@@ -57,6 +58,11 @@ hr {
 .vl {
   height: 500px;
   border-left: 1px solid rgb(223, 223, 223);
+}
+
+#imgdiv{
+  width: 40%;
+  margin: auto 4%;
 }
 
 /* Product Image */

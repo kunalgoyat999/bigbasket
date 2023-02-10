@@ -52,3 +52,7 @@ document.getElementById("homeproducts").addEventListener("click", function(){
     localStorage.setItem("category", "homeproducts")
     window.location.href ="category/category.html"
 })
+
+document.getElementById("basket").addEventListener("click", function() {
+    window.location.href ="Cart/cartPage.html"
+})

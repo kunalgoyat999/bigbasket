@@ -1,11 +1,14 @@
 displayamount();
 
+
 function displayamount() {
   var basketvalue = document.getElementById("basketvalue");
   var total = document.getElementById("tot");
-  basketvalue.textContent = " "+ 50;
 
-  total.textContent = " "+ 50;
+  var tot = localStorage.getItem("totalcartValue");
+  basketvalue.textContent = " "+ tot;
+
+  total.textContent = " "+ tot;
 }
 
 var couponInput = document.getElementById("coupon-input");
@@ -17,7 +20,7 @@ applyBtn.addEventListener("click", function () {
   var basketvalue = document.getElementById("basketvalue");
   var total = document.getElementById("tot");
   if (couponCode === "masai30") {
-    basketvalue.textContent -= Number(basketvalue.textContent) * (3 / 10);
+    basketvalue.textContent -= (Number(basketvalue.textContent) * (3 / 10)).toFixed();
     total.textContent -= Number(total.textContent) * (3 / 10);
   } else {
     message.innerHTML = "Invalid coupon code. Please try again.";
@@ -70,3 +73,9 @@ function pay() {
     window.location.href = "../../index.html";
   }
 }
+
+
+// Nav Bar
+document.getElementById("basket").addEventListener("click", function () {
+  window.location.href = "../Cart/cartPage.html";
+});
