@@ -20,12 +20,11 @@
     text-align: center;
     position: absolute;
     left: 50%;
-    /* top: -50%; */
     top: 50%;
     transform: translate(-50%, -50%);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    transition: 1.2s;
-    z-index: 9;
+    /* transition: 1.2s; */
+    /* z-index: 9; */
 }
 .closeOtp{
     left: -50%;
@@ -45,7 +44,7 @@
 }
 .otpform span{
     position: absolute;
-    right: -12px;
+    right: -23px;
     top: -12px;
     margin-right: 12px;
     height: 30px;
