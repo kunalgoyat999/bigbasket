@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>otp</title>
+    <link rel="stylesheet" href="otp.css">
+</head>
+<body>
+    <!-- <div class="overlay" id="over"></div> -->
+
+    <div class="otpform" id="from">
+        <span class="cross" onclick="closepopUp()">&times;</span>
+        <form>
+            <p>VERIFY MOBILE NUMBER</p>
+            <p>Please check the OTP sent to your mobile number</p>
+            
+            <h3><span id="number"> 9711481169</span><button>Change</button></h3>
+            <p>Enter OTP</p>
+
+            <div class="otpInput">
+                <Input Type="Text" id='Ist' Maxlength="1"/>
+                <Input Type="Text" id="Sec" Maxlength="1" />
+                <Input Type="Text" id="Third" Maxlength="1" />
+                <Input Type="Text" id="Fourth" Maxlength="1" />
+                <Input Type="Text" id="Fifth" Maxlength="1" />
+                <Input Type="Text" id="Six" Maxlength="1" />
+            </div>
+            <button id="changeTime">Resend OTP <span id="timeStamp"></span></button>
+            <button id="continueBtn" onclick="showpopUp()">Verify & Continue</button>
+        </form>
+    </div>
+</body>
+</html>
+<script src="otp.js"></script>
