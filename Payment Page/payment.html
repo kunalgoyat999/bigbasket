@@ -22,12 +22,15 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <script src="https://kit.fontawesome.com/b18434914d.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/b18434914d.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
     <div id="content">
-      <div id="accordion">
+      <div id="accordion" class="boxes">
         <div class="card">
           <div class="card-header" id="headingOne">
             <h5 class="mb-0">
@@ -38,45 +41,68 @@
                 aria-expanded="true"
                 aria-controls="collapseOne"
               >
-              <i style="color: #474747;" class="fa-solid fa-location-dot"></i>
-              Delivery Address
-              
+                <i style="color: #474747" class="fa-solid fa-location-dot"></i>
+                Delivery Address
               </button>
             </h5>
           </div>
-  
+
           <div
             id="collapseOne"
             class="collapse show"
             aria-labelledby="headingOne"
             data-parent="#accordion"
           >
-            <div class="card-body1">
-                <form>
-                  <div class="form-group">
-                    <label for="fullName">Full Name</label>
-                    <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
-                  </div>
-                  <div class="form-group">
-                    <label for="address">Address</label>
-                    <input type="text" class="form-control" id="address" placeholder="Enter your address">
-                  </div>
-                  <div class="form-group">
-                    <label for="city">City</label>
-                    <input type="text" class="form-control" id="city" placeholder="Enter your city">
-                  </div>
-                  <div class="form-group">
-                    <label for="state">State</label>
-                    <input type="text" class="form-control" id="state" placeholder="Enter your state">
-                  </div>
-                  <div class="form-group">
-                    <label for="zip">Zip Code</label>
-                    <input type="text" class="form-control" id="zip" placeholder="Enter your zip code">
-                  </div>
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-              
-              
+            <div id="card-body1">
+              <form id="addressform" >
+                <div class="form-group">
+                  <label for="fullName">Full Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="fullName"
+                    placeholder="Enter your full name"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="address">Address</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="address"
+                    placeholder="Enter your Street Number"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="city">City</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="city"
+                    placeholder="Enter your city"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="state">State</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="state"
+                    placeholder="Enter your state"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="zip">Zip Code</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="zip"
+                    placeholder="Enter your zip code"
+                  />
+                </div>
+                
+              </form>
+              <button type="submit" class="btn btn-primary" id="submitbutton">Submit</button>
             </div>
           </div>
         </div>
@@ -90,10 +116,9 @@
                 aria-expanded="false"
                 aria-controls="collapseThree"
               >
-              <i style="color: #474747;" class="fa-solid fa-credit-card"></i>
-              Payments Options
+                <i style="color: #474747" class="fa-solid fa-credit-card"></i>
+                Payments Options
               </button>
-
             </h5>
           </div>
           <div
@@ -132,7 +157,7 @@
                           <label for="valid">Valid Through</label>
                           <input type="text" id="valid" placeholder="MM / YY" />
                         </div>
-  
+
                         <div class="first_line">
                           <label for="cvv">CVV</label>
                           <input
@@ -158,27 +183,27 @@
       <div id="rightCon">
         <!-- Right Content -->
         <h5>Apply Voucher</h5>
-        <div id="voucher">      
-          <input type="text" id="coupon-input" placeholder="Enter voucher code">
+        <div id="voucher">
+          <input
+            type="text"
+            id="coupon-input"
+            placeholder="Enter voucher code"
+          />
           <button id="apply-btn">Apply</button>
           <p id="message"></p>
-        </div>      
+        </div>
 
-        <h5 class="orSum">Order Summary</h5>
         <div id="orderSum">
-          
-            <h4>Basket value</h4>
-            <h4>Delivery Charges</h4>
-            <hr>
-            <h4>Total Amount Payable</h4>
-            <h4 id="total">Total Savings</h4>
-          
-          <p id="message"></p>
-        </div>       
+          <h4>Basket value:- <span id="basketvalue"></span></h4>
+          <h4>Delivery Charges: Rs 0</h4>
+          <hr />
+          <h4 id="total">Total Amount Payable:- <span id="tot"></span> </h4>
 
+          <p id="message"></p>
+        </div>
       </div>
     </div>
-    
+
     <!-- payment details -->
   </body>
   <script
