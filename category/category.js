@@ -1152,3 +1152,124 @@ function addToCart(index) {
 document.getElementById("basket").addEventListener("click", function () {
   window.location.href = "../Cart/cartPage.html";
 });
+
+
+// sort by price from left sidebar
+
+document.getElementById("between50").addEventListener("click",sortBetween50);
+document.getElementById("between150").addEventListener("click",sortBetween150);
+document.getElementById("between250").addEventListener("click",sortBetween250);
+
+
+function sortBetween50(){
+  var isChecked =event.target.checked;
+
+  
+
+
+  if(isChecked){
+
+    document.getElementById("between150").checked =false;
+    document.getElementById("between250").checked =false;
+
+    var filter =productsObjArr.filter(function(e){
+
+      var price =e.finalPrice;
+      price =price.substring(1,price.length)
+
+      return price>=0 && price<=50
+    });
+
+    filter.sort(function(a,b){
+
+      var num1 =parseInt(a.finalPrice.substring(1,a.length));
+      var num2 =parseInt(b.finalPrice.substring(1,b.length));
+
+      if(num1 > num2) return 1;
+      if(num1 < num2) return -1;
+      return 0;
+    });
+
+    displayProducts(filter);
+    
+  }
+  else{
+    displayProducts(productsObjArr);
+  }
+}
+
+
+
+function sortBetween150(){
+  var isChecked =event.target.checked;
+
+  
+
+
+  if(isChecked){
+
+    document.getElementById("between50").checked =false;
+    document.getElementById("between250").checked =false;
+    var filter =productsObjArr.filter(function(e){
+
+      var price =e.finalPrice;
+      price =price.substring(1,price.length)
+
+      return price>=51 && price<=150
+    });
+
+    filter.sort(function(a,b){
+
+      var num1 =parseInt(a.finalPrice.substring(1,a.length));
+      var num2 =parseInt(b.finalPrice.substring(1,b.length));
+
+      if(num1 > num2) return 1;
+      if(num1 < num2) return -1;
+      return 0;
+    });
+
+    displayProducts(filter);
+   
+  }
+  else{
+    displayProducts(productsObjArr);
+  }
+}
+
+
+
+
+function sortBetween250(){
+  var isChecked =event.target.checked;
+
+  
+
+
+  if(isChecked){
+    document.getElementById("between50").checked =false;
+    document.getElementById("between150").checked =false;
+    var filter =productsObjArr.filter(function(e){
+
+      var price =e.finalPrice;
+      price =price.substring(1,price.length)
+
+      return price>=151 && price<=250
+    });
+
+    filter.sort(function(a,b){
+
+      var num1 =parseInt(a.finalPrice.substring(1,a.length));
+      var num2 =parseInt(b.finalPrice.substring(1,b.length));
+
+      if(num1 > num2) return 1;
+      if(num1 < num2) return -1;
+      return 0;
+    });
+
+    displayProducts(filter);
+    
+  }
+  else{
+    displayProducts(productsObjArr);
+  }
+}

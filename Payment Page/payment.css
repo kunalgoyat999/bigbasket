@@ -151,9 +151,7 @@ input[type="radio"] {
   gap: 5px;
   margin-bottom: 30px;
 }
-#checkbox {
-  /* margin-top: 9px; */
-}
+
 #pay {
   width: 30%;
   height: 50px;
