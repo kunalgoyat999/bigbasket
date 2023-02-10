@@ -20,6 +20,8 @@ var productsObjArr=[
     finalPrice: '₹45.89',
     strikedOffPrice: '₹60.38',
     quantity: '200 g',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -29,6 +31,8 @@ var productsObjArr=[
     finalPrice: '₹100',
     strikedOffPrice: '₹131.58',
     quantity: '1 kg - (5-6 pcs per kg)',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -38,6 +42,8 @@ var productsObjArr=[
     finalPrice: '₹167.37',
     strikedOffPrice: '₹220.22',
     quantity: '1 pc',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -47,6 +53,8 @@ var productsObjArr=[
     finalPrice: '₹45',
     strikedOffPrice: '₹59.21',
     quantity: 'Approx 500 g - 1 Pack',
+    qty: 1,
+    inCart: false,
     offer: '23% OFF'
   },
   {
@@ -56,6 +64,8 @@ var productsObjArr=[
     finalPrice: '₹42.47',
     strikedOffPrice: '₹55.88',
     quantity: '1 kg - (Approx. 11-12 pcs)',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -65,6 +75,8 @@ var productsObjArr=[
     finalPrice: '₹140',
     strikedOffPrice: '₹184.21',
     quantity: '200 g',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -74,6 +86,8 @@ var productsObjArr=[
     finalPrice: '₹49.97',
     strikedOffPrice: '₹65.75',
     quantity: '1 pc - (approx. 450g to 500)',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -83,6 +97,8 @@ var productsObjArr=[
     finalPrice: '₹21.5',
     strikedOffPrice: '₹33.83',
     quantity: '3 pcs',
+    qty: 1,
+    inCart: false,
     offer: '43% OFF'
   },
   {
@@ -92,6 +108,8 @@ var productsObjArr=[
     finalPrice: '₹48.96',
     strikedOffPrice: '₹64.42',
     quantity: '4 pcs - (Approx. 500g - 600g)',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -101,6 +119,8 @@ var productsObjArr=[
     finalPrice: '₹69.23',
     strikedOffPrice: '₹91.09',
     quantity: '500 g',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -110,6 +130,8 @@ var productsObjArr=[
     finalPrice: '₹129.54',
     strikedOffPrice: '₹170.45',
     quantity: '1 pc - (approx. 550g to 650g)',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -119,6 +141,8 @@ var productsObjArr=[
     finalPrice: '₹56.7',
     strikedOffPrice: '₹74.6',
     quantity: '4 pcs - (200-220 g per pc)',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -128,6 +152,8 @@ var productsObjArr=[
     finalPrice: '₹58.08',
     strikedOffPrice: '₹76.42',
     quantity: '4 pcs',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -137,6 +163,8 @@ var productsObjArr=[
     finalPrice: '₹34.68',
     strikedOffPrice: '₹45.63',
     quantity: '4 pcs - (Approx. 450g - 500g)',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -146,6 +174,8 @@ var productsObjArr=[
     finalPrice: '₹162.43',
     strikedOffPrice: '₹213.72',
     quantity: '3 pcs',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -155,6 +185,8 @@ var productsObjArr=[
     finalPrice: '₹63.08',
     strikedOffPrice: '₹83',
     quantity: '1 pc - 220-350g',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -164,6 +196,8 @@ var productsObjArr=[
     finalPrice: '₹57.12',
     strikedOffPrice: '₹75.16',
     quantity: '4 pcs - (Approx.450 g-500 g)',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -173,6 +207,8 @@ var productsObjArr=[
     finalPrice: '₹110.45',
     strikedOffPrice: '₹145.33',
     quantity: '4 pcs',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -182,6 +218,8 @@ var productsObjArr=[
     finalPrice: '₹41.82',
     strikedOffPrice: '₹55.03',
     quantity: '1 pc',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -191,6 +229,8 @@ var productsObjArr=[
     finalPrice: '₹208.08',
     strikedOffPrice: '₹273.79',
     quantity: '1 pc - (Approx. 400g - 500g)',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -200,6 +240,8 @@ var productsObjArr=[
     finalPrice: '₹90.78',
     strikedOffPrice: '₹119.45',
     quantity: '1 pc - 800g - 1.4 kg',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -209,6 +251,8 @@ var productsObjArr=[
     finalPrice: '₹155.04',
     strikedOffPrice: '₹204',
     quantity: '500 g',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -218,6 +262,8 @@ var productsObjArr=[
     finalPrice: '₹176.92',
     strikedOffPrice: '₹232.79',
     quantity: '1 pc',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -227,6 +273,8 @@ var productsObjArr=[
     finalPrice: '₹21.43',
     strikedOffPrice: '₹28.2',
     quantity: '8 pcs',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -236,6 +284,8 @@ var productsObjArr=[
     finalPrice: '₹59.16',
     strikedOffPrice: '₹77.84',
     quantity: '4 pcs - (Approx.720 - 800 g)',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -245,6 +295,8 @@ var productsObjArr=[
     finalPrice: '₹69.36',
     strikedOffPrice: '₹91.26',
     quantity: '500 g',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -254,6 +306,8 @@ var productsObjArr=[
     finalPrice: '₹33.66',
     strikedOffPrice: '₹44.29',
     quantity: '1 pc - 500 g - 800 g',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -263,6 +317,8 @@ var productsObjArr=[
     finalPrice: '₹69.36',
     strikedOffPrice: '₹91.26',
     quantity: '100 g',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -272,6 +328,8 @@ var productsObjArr=[
     finalPrice: '₹44.61',
     strikedOffPrice: '₹58.7',
     quantity: '1 pc (approx 300 - 400 g)',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -281,6 +339,8 @@ var productsObjArr=[
     finalPrice: '₹80.58',
     strikedOffPrice: '₹106.03',
     quantity: '200 g',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -290,6 +350,8 @@ var productsObjArr=[
     finalPrice: '₹163.2',
     strikedOffPrice: '₹214.74',
     quantity: '4 pcs - 700-900g',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -299,6 +361,8 @@ var productsObjArr=[
     finalPrice: '₹66.3',
     strikedOffPrice: '₹87.24',
     quantity: '1 pc - approx. 300 g to 500 g',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -308,6 +372,8 @@ var productsObjArr=[
     finalPrice: '₹29.34',
     strikedOffPrice: '₹38.6',
     quantity: '1 pc - 500g-900g',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -317,6 +383,8 @@ var productsObjArr=[
     finalPrice: '₹77.14',
     strikedOffPrice: '₹101.5',
     quantity: '1 kg',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -326,6 +394,8 @@ var productsObjArr=[
     finalPrice: '₹44.88',
     strikedOffPrice: '₹59.05',
     quantity: '1 pc',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -335,6 +405,8 @@ var productsObjArr=[
     finalPrice: '₹80.58',
     strikedOffPrice: '₹106.03',
     quantity: '1 pc - (approx. 300g to 400g)',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -344,6 +416,8 @@ var productsObjArr=[
     finalPrice: '₹108',
     strikedOffPrice: '₹142.11',
     quantity: '1 pc - 700 g - 1.5 kg',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -353,6 +427,8 @@ var productsObjArr=[
     finalPrice: '₹22.44',
     strikedOffPrice: '₹29.53',
     quantity: '200 g',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -362,6 +438,8 @@ var productsObjArr=[
     finalPrice: '₹58.14',
     strikedOffPrice: '₹76.5',
     quantity: '80 g',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -371,6 +449,8 @@ var productsObjArr=[
     finalPrice: '₹73',
     strikedOffPrice: '₹96.05',
     quantity: '200 g',
+    qty: 1,
+    inCart: false,
     offer: '20% OFF'
   },
   {
@@ -380,6 +460,8 @@ var productsObjArr=[
     finalPrice: '₹114.24',
     strikedOffPrice: '₹150.32',
     quantity: '1 pack (approx. 500 g)',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -389,6 +471,8 @@ var productsObjArr=[
     finalPrice: '₹200',
     strikedOffPrice: '₹263.16',
     quantity: '1 pc (approx. 1 -3 kg)',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -398,6 +482,8 @@ var productsObjArr=[
     finalPrice: '₹42.84',
     strikedOffPrice: '₹56.37',
     quantity: '1 pc',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -407,6 +493,8 @@ var productsObjArr=[
     finalPrice: '₹28',
     strikedOffPrice: '₹36.84',
     quantity: '80 g',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -416,6 +504,8 @@ var productsObjArr=[
     finalPrice: '₹67.15',
     strikedOffPrice: '₹88.35',
     quantity: '200 g',
+    qty: 1,
+    inCart: false,
     offer: '20% OFF'
   },
   {
@@ -425,6 +515,8 @@ var productsObjArr=[
     finalPrice: '₹49.98',
     strikedOffPrice: '₹65.76',
     quantity: '4 pcs - Approx. 300 to 450 gm',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -434,6 +526,8 @@ var productsObjArr=[
     finalPrice: '₹65.28',
     strikedOffPrice: '₹85.89',
     quantity: '200 g',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -443,6 +537,8 @@ var productsObjArr=[
     finalPrice: '₹7.02',
     strikedOffPrice: '₹8.77',
     quantity: '1 pc',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   },
   {
@@ -452,6 +548,8 @@ var productsObjArr=[
     finalPrice: '₹27.54',
     strikedOffPrice: '₹36.24',
     quantity: '4 pcs(Approx.600 g-700 g)',
+    qty: 1,
+    inCart: false,
     offer: '24% OFF'
   }
 ];
@@ -647,12 +745,12 @@ function displayProducts(arr){
     var divBtnContainer =document.createElement("div");
     divBtnContainer.setAttribute("class","btn-container");
 
-    var whishlistBtnContainer =document.createElement("div");
-    whishlistBtnContainer.setAttribute("class","whish");
-    var btnWhishList =document.createElement("button");
-    btnWhishList.setAttribute("class","whishlist-btn")
-    btnWhishList.innerHTML =`<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.821 15.506c.169 0 .339.043.492.129L17 18.285V5.335c0-.201-.121-.334-.2-.334H7.2c-.08 0-.2.133-.2.334v12.9l4.306-2.585c.159-.095.337-.143.515-.143ZM6 21a1 1 0 0 1-1-1V5.334C5 4.047 5.987 3 7.2 3h9.6C18.013 3 19 4.047 19 5.334V20a1 1 0 0 1-1.492.87l-5.672-3.207-5.322 3.195A1.006 1.006 0 0 1 6 21Z" fill="#101010"></path></svg>`
-    whishlistBtnContainer.append(btnWhishList);
+    // var whishlistBtnContainer =document.createElement("div");
+    // whishlistBtnContainer.setAttribute("class","whish");
+    // var btnWhishList =document.createElement("button");
+    // btnWhishList.setAttribute("class","whishlist-btn")
+    // btnWhishList.innerHTML =`<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.821 15.506c.169 0 .339.043.492.129L17 18.285V5.335c0-.201-.121-.334-.2-.334H7.2c-.08 0-.2.133-.2.334v12.9l4.306-2.585c.159-.095.337-.143.515-.143ZM6 21a1 1 0 0 1-1-1V5.334C5 4.047 5.987 3 7.2 3h9.6C18.013 3 19 4.047 19 5.334V20a1 1 0 0 1-1.492.87l-5.672-3.207-5.322 3.195A1.006 1.006 0 0 1 6 21Z" fill="#101010"></path></svg>`
+    // whishlistBtnContainer.append(btnWhishList);
 
     var addToCartBtn =document.createElement("button");
     addToCartBtn.setAttribute("class","addToCart-btn");
@@ -661,10 +759,31 @@ function displayProducts(arr){
     // click listner for add to cart
 
     addToCartBtn.addEventListener("click",function(){
-      addToCart(i);
+      var isPrsentInCart =false;
+
+      prodId =productsObjArr[i].productId;
+      
+      var cartArr =JSON.parse(localStorage.getItem("cartProduct"))||[];
+
+      cartArr.map(function(e){
+        if(e.productId===prodId){
+          isPrsentInCart =true;
+        }
+      })
+
+      if(isPrsentInCart){
+        alert("Product is already in Cart!")
+      }
+      else{
+        addToCart(i);
+        alert("Successfully added to Cart!")
+      }
+
+
+      
     });
 
-    divBtnContainer.append(whishlistBtnContainer,addToCartBtn);
+    divBtnContainer.append(addToCartBtn);
     
     // btn-container ends -->
 
@@ -766,7 +885,11 @@ for(var i=1; i<fruitNamesList.length; i++){
 
 
 // function to add product to cart
-
+var cartProductArr =JSON.parse(localStorage.getItem("cartProduct"))||[];
 function addToCart(index){
-  console.log(productsObjArr[index])
+  // console.log(productsObjArr[index])
+  cartProductArr.push(productsObjArr[index])
+  localStorage.setItem("cartProduct",JSON.stringify(cartProductArr))
+
+
 }

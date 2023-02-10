@@ -5,10 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Category Page</title>
-    <link rel="stylesheet" href="category.css">
+    
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- bootstrap cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="category.css">
+
+
 </head>
 <body style="margin: 0;">
     <!-- nav section -->
@@ -111,7 +120,7 @@
                                         <!-- filters select tag -->
                                         <div class="filterBy">
                                             <div>
-                                                <span>Brands</span>
+                                                <span class="sub-btn">Brands</span>
                                                 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" class="transform rotate-180"><path d="M12 15.5a.997.997 0 0 1-.707-.293l-4-4a.999.999 0 1 1 1.414-1.414l3.305 3.305 3.293-3.18a1 1 0 0 1 1.39 1.439l-4 3.862a.998.998 0 0 1-.695.28Z"></path></svg>
                                             </div>
                                             <div class="list-items">
@@ -307,9 +316,27 @@
     
 <!-- Footer section end -->
 
-    
+   
        
 </body>
 </html>
+
+<script type="text/javascript">
+       
+
+    //        $('.sub-btn').click(function(){
+    //   $(this).next('.sub-menu').slideToggle();
+    // });
+    $(document).ready(function(){ 
+        $('.sub-btn').click(function(){
+            $(this).next('.sub-menu').slideUp();
+    });
+        
+        
+       });
+    
+           
+            
+        </script>
 
 <script src="category.js"></script>
