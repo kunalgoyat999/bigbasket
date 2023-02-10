@@ -812,7 +812,6 @@ function displayProducts(arr){
 } //display func ends
 
 
-
 //sort button i.e Relevance
 
 document.getElementById("sort-by-price").addEventListener("click",toggleSortOptions)

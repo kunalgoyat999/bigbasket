@@ -219,22 +219,22 @@
       <h2>Fruits and Vegetables</h2>
       <hr />
       <div>
-        <div>
+        <div id="fruits">
           <img src="./images/fruitsvegetables/1st.webp" alt="" />
         </div>
-        <div>
+        <div id="fruits">
           <img src="./images/fruitsvegetables/2nd.webp" alt="" />
         </div>
-        <div>
+        <div id="fruits">
           <img src="./images/fruitsvegetables/3rd.webp" alt="" />
         </div>
-        <div>
+        <div id="fruits">
           <img src="./images/fruitsvegetables/4th.webp" alt="" />
         </div>
-        <div>
+        <div id="fruits">
           <img src="./images/fruitsvegetables/5th.webp" alt="" />
         </div>
-        <div>
+        <div id="fruits">
           <img src="./images/fruitsvegetables/6th.webp" alt="" />
         </div>
       </div>
@@ -245,7 +245,7 @@
       <h2>Your Daily Staples</h2>
       <hr />
       <div>
-        <div>
+        <div id="daily">
           <img src="./images/staple/1st.webp" alt="" />
         </div>
         <div>
@@ -636,24 +636,5 @@
     </div>
   </body>
   <script src="header-footer/header.js"></script>
-  <script>
-    document.getElementById("textButton").addEventListener("click", ontoggle);
-    function ontoggle() {
-      var dots = document.getElementById("dots");
-      var showMoreText = document.getElementById("moretext");
-      var buttonText = document.getElementById("textButton");
-
-      if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        buttonText.innerHTML = "Read more..";
-        showMoreText.style.display = "none";
-      } else {
-        dots.style.display = "none";
-        showMoreText.style.display = "inline";
-        var brtg = document.createElement("br");
-        showMoreText.append(brtg);
-        buttonText.innerHTML = "Read Less..";
-      }
-    }
-  </script>
+  <script src="index.js"></script>
 </html>
