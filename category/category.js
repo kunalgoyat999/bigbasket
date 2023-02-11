@@ -1859,28 +1859,39 @@ function hideSortSection() {
 
 //   hide sort section end
 
-var cat =localStorage.getItem("category");
+var ArrToBeUsed;
+
+
+  var cat =localStorage.getItem("category");
+
 
   if(cat=="fruits"){
     displayProducts(productsObjArr);
+    ArrToBeUsed =productsObjArr;
   }
   else if(cat=="daily"){
     displayProducts(dailyStaples);
+    ArrToBeUsed =dailyStaples;
   }
   else if(cat=="beverage"){
     displayProducts(beveragesObjArr);
+    ArrToBeUsed =beveragesObjArr;
   }
   else if(cat=="snack"){
     displayProducts(snacks);
+    ArrToBeUsed =snacks;
   }
   else if(cat=="clean"){
     displayProducts(cleaning);
+    ArrToBeUsed =cleaning;
   }
   else if(cat=="beaut"){
     displayProducts(beauty);
+    ArrToBeUsed =beauty;
   }
   else if(cat=="homeproducts"){
     displayProducts(household);
+    ArrToBeUsed =household;
   }
 
 //   dynamically product-box creation
@@ -2098,7 +2109,7 @@ function toggleSortOptions() {
 
 function sortLowToHigh() {
   console.log("sortLowToHigh");
-  productsObjArr.sort(function (a, b) {
+  ArrToBeUsed.sort(function (a, b) {
     var num1 = parseInt(a.finalPrice.substring(1, a.length));
     var num2 = parseInt(b.finalPrice.substring(1, b.length));
 
@@ -2107,13 +2118,13 @@ function sortLowToHigh() {
     return 0;
   });
 
-  displayProducts(productsObjArr);
+  displayProducts(ArrToBeUsed);
 }
 
 // sortHighToLow
 
 function sortHighToLow() {
-  productsObjArr.sort(function (a, b) {
+  ArrToBeUsed.sort(function (a, b) {
     var num1 = parseInt(a.finalPrice.substring(1, a.length));
     var num2 = parseInt(b.finalPrice.substring(1, b.length));
 
@@ -2122,7 +2133,7 @@ function sortHighToLow() {
     return 0;
   });
 
-  displayProducts(productsObjArr);
+  displayProducts(ArrToBeUsed);
 }
 
 //fruitNameSort ie.sort by fruit name on left sidebar
