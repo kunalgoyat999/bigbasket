@@ -1,0 +1,236 @@
+#content {
+  width: 70%;
+  margin: 5% auto;
+  display: flex;
+  justify-content: center;
+}
+#content .boxes {
+  width: 70%;
+}
+
+/* Left Box */
+
+#card-body1 {
+  width: 100%;
+  text-align: center;
+  padding: 5%;
+}
+
+form {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3%;
+  text-align: left;
+  justify-content: space-around;
+}
+
+label {
+  font-weight: bold;
+}
+
+#card-body1 .form-group {
+  margin-bottom: 2%;
+}
+
+#card-body1 input {
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+#card-body1 button {
+  padding: 14px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 25px auto;
+}
+
+#card-body1 button:hover {
+  background-color: #3e8e41;
+}
+
+/* Payment Tab */
+#main_box {
+  display: flex;
+  margin: auto;
+}
+#left {
+  border-right: 1px solid rgb(204, 200, 200);
+  border-left: 1px solid rgb(204, 200, 200);
+  display: flex;
+  flex-direction: column;
+}
+#right {
+  flex: 4;
+  background-color: whitesmoke;
+}
+#left > div {
+  border-bottom: 1px solid rgb(148, 145, 145);
+
+  padding: 27px;
+  font-family: sans-serif;
+  color: #222222;
+}
+#left > div:nth-child(1) {
+  color: black;
+  font-weight: 700;
+  background-color: whitesmoke;
+}
+#left > div:nth-child(6) {
+  border: none;
+}
+
+input[type="radio"] {
+  border: 0px;
+  height: 2em;
+  width: 20px;
+}
+#right {
+  display: flex;
+  height: 400px;
+}
+#right > div:nth-child(1) {
+  flex: 1;
+}
+#right > div:nth-child(2) {
+  flex: 12;
+}
+#radio {
+  margin-left: 30px;
+  margin-top: 15px;
+}
+#details > p {
+  font-weight: 700;
+  font-family: sans-serif;
+  margin-top: 20px;
+}
+.first_line {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+#card_details {
+  margin-top: 40px;
+  color: gray;
+  font-family: sans-serif;
+  font-size: 10px;
+}
+
+#card_no {
+  border: none;
+  border-bottom: 1px solid grey;
+  background-color: whitesmoke;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+#sec_line {
+  display: flex;
+  gap: 20px;
+}
+#valid {
+  border: none;
+  border-bottom: 1px solid grey;
+  background-color: whitesmoke;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+#cvv {
+  border: none;
+  border-bottom: 1px solid grey;
+  background-color: whitesmoke;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+#save {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 30px;
+}
+
+#pay {
+  width: 30%;
+  height: 50px;
+  background-color: yellowgreen;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Right Most Tab */
+
+#rightCon {
+  margin-left: 12px;
+}
+#rightCon h5 {
+  font-size: 16px;
+  color: #666666;
+}
+
+#voucher {
+  width: 300px;
+  height: 100px;
+  background-color: #f7f7f7;
+  margin: 0 auto;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+input[type="text"] {
+  width: 60%;
+  padding: 12px 15px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+button[id="apply-btn"] {
+  width: 30%;
+  padding: 12px 15px;
+  background-color: #b8bcb8;
+  color: rgb(23, 20, 20);
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#apply-btn:hover {
+  background-color: #17b517;
+}
+#message {
+  /* margin: 8px 0; */
+  color: green;
+  font-weight: bold;
+}
+
+#orderSum {
+  width: 300px;
+  height: auto;
+  padding: 4px 5px;
+  background-color: #f7f7f7;
+  text-align: left;
+  font-family: sans-serif;
+}
+.orSum {
+  margin-top: 8px;
+  color: #666666;
+}
+
+#orderSum h4 {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 15px;
+  color: #666666;
+}
+#orderSum #total {
+  border: none;
+  padding: 10px 10px;
+  background-color: #dcf2bb;
+  color: #518406;
+}

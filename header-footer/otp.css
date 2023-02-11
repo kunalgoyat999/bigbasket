@@ -1,0 +1,148 @@
+
+.overlay{
+    width: 100%;
+    height: 100vh;
+    top: 0%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.212);
+    z-index: -1;
+    opacity: 0;
+    transition: 1s;
+}
+.showOverlay{
+    opacity: 1;
+    z-index: 1;
+}
+.otpform{
+    width: 300px;
+    background-color: white;
+    padding: 50px 35px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* transition: 1.2s; */
+    /* z-index: 9; */
+}
+.closeOtp{
+    left: -50%;
+}
+.showLoginform{
+    top: 50%;
+}
+.otpform > form > p:first-child{
+    color: rgb(132,194,37);
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: -5px;
+}
+.otpform > form > p{
+    margin: 40px 0 5px 0;
+    color: grey;
+}
+.otpform span{
+    position: absolute;
+    right: -23px;
+    top: -12px;
+    margin-right: 12px;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    font-size: 30px;
+    border-radius: 20px;
+    background-color: rgb(141, 138, 138);
+    color: white;
+    cursor: pointer;
+}
+
+.otpform > form > h3 > button{
+    padding: 3px 10px;
+    border-radius: 3px;
+    border: 0.5px solid grey;
+    color: grey;
+    background-color: white;
+    cursor: pointer;
+}
+.otpInput {
+    Display: Flex;
+    Justify-Content: Center;
+    gap: 10px;
+    /* border: 1px solid red; */
+}
+input {
+    Margin: 2px;
+    Height: 30px;
+    Width: 25px;
+    border: none;
+    border-bottom: 1px solid grey;
+    outline: none;
+    Text-Align: Center;
+    Font-Size: 1.2rem;
+    /* border: 1px solid red; */
+}
+.otpform > form > #changeTime{
+    margin: 35px 0 95px 0;
+    padding: 3px 10px;
+    border-radius: 3px;
+    border: 0.5px solid grey;
+    color: grey;
+    background-color: white;
+    cursor: pointer;
+}
+
+.otpform > form > button:last-child{
+    margin: 15px 0;
+    width: 100%;
+    height: 55px;
+    background-color: rgb(132,194,37);
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: -20px;
+}
+
+.success{
+    width: 400px;
+    height: 320px;
+    position: absolute;
+    left: -50%;
+    top: 50%;
+    transform: translate(-50%,50%);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px black;
+    background-color:rgb(16,132,126);
+  }
+  .showSuccess{
+    top: 50%;
+  }
+  .success div h1{
+    color: white;
+    display: flex;
+    text-align: center;
+    padding: 55px;
+    margin-top: -50px;
+  } 
+  .success div img{
+    padding: 20px;
+  }
+  #danger{
+    width: 60px;
+    height: 60px;
+    color: white;
+    /* padding: 50px; */
+    font-size: 50px;
+    position: absolute;
+    left: 42%;
+    top: 75%;
+    text-align: center;
+    background-color: grey;
+    border-radius: 5px;
+  }
+  #danger:hover{
+    background-color: black;
+  }

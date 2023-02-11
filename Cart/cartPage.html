@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.bbassets.com/static/v2514/images/favicon.ico?v=2514" type="image/x-icon">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="cartPage.css">
+   
+ <!-- Header -->
+ <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico" />
+ <link rel="stylesheet" href="../header-footer/header.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header">
+        <div class="upperTop">
+          <span><i class="fa-solid fa-phone"></i> 1860 123 1000</span>
+          <p>
+            <i class="fa-solid fa-location-dot"></i>Location<i
+              class="arrow down"
+            ></i>
+          </p>
+          <span
+            ><a class="loginBtn" href="#"
+              ><i class="fa-regular fa-user"></i>Login/Sign Up</a
+            ></span
+          >
+        </div>
+        <nav>
+          <div>
+            <a href="../index.html"
+              ><img src="../header-footer/images/BigBasket_logo.png" alt="logo"
+            /></a>
+          </div>
+          <form class="searchBar">
+            <input type="text" placeholder="Search for Products.." />
+            <a type="submit"><i class="fa fa-search"></i></a>
+          </form>
+          <div class="basket" id="basket">
+            <i class="fa-solid fa-basket-shopping"></i>
+            <p>My Basket</p>
+          </div>
+        </nav>
+        <div class="overlay"></div>
+        <div class="loginform">
+          <span class="cross">&times;</span>
+          <form style="text-align: center">
+            <p>LOGIN/SIGN UP</p>
+            <div>
+              <input
+                type="number"
+                id="number"
+                placeholder="Enter Mobile Number (10-digit)"
+              />
+            </div>
+            <p id="ptag"></p>
+            <div>
+              <button>Login using Email Address</button>
+            </div>
+            <button id="button">Continue</button>
+            <!-- <input id="button" type="submit" value="Continue"  /> -->
+            <p>
+              By continuing, I accept TCP-bigbasket’s Terms and Conditions and
+              Privacy Policy.
+            </p>
+          </form>
+        </div>
+      </div>
+  
+      <div id="header2">
+        <div>
+          <div>
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div>
+            <i class="fa-regular fa-user"></i>
+          </div>
+          <img src="../header-footer/images/bigbasket-logo.png" alt="logo" />
+          <div>
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+        <div>
+          <input type="text" placeholder="Search Products.." />
+          <button><i class="fa fa-search"></i></button>
+        </div>
+      </div>
+
+    <div id="cartContainer">
+        <h1 id="topTotal">There are <span id="productCount"></span> items in your basket.</h1>
+        <hr>
+        <!-- cart meta data div -->
+        <div id="cartItemInfo">
+           
+                <!-- table -->
+                    
+            <div id="cartItems">
+                <!-- childDiv start -->
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 45%;">ITEM DESCRIPTION</th>
+                                <th>UNIT PRICE</th>
+                                <th>QUANTITY</th>
+                                <th>SUBTOTAL</th>
+                                <!-- <th>SAVINGS</th> -->
+                            </tr>
+                          
+                        </thead>
+                        <tbody>
+                            <!-- append added prods -->
+
+                        </tbody>
+                        
+                    </table>
+                    <hr>
+
+                <!-- table -->
+                </div>
+
+                <!-- child div end -->
+            </div>
+        </div>
+        <!-- items DESCRIPTION div -->
+        <div id="checkoutBox">
+            <div id="leftBox">
+                <button id="emptyButton"><i class="fas fa-shopping-basket"></i>Empty Basket</button>
+                <button class="btnShop" id="continueShopping">Continue Shopping</button>
+            </div>
+
+            <div id="rightBox">
+                <div id="checkoutMain">
+                    <div id="box1">
+                        <div id="subTotalDiv">
+                            <div id="totalDiv">
+                                <p>Subtotal</p>
+                                <h3 id="subTotalPrice">Rs <span id="totalCartPrice"></span></h3>
+                            </div>
+                            <div id="deliveryDiv">
+                                <h3>Delivery Charges
+                                    <i class="fa-solid fa-circle-question mark "></i>
+                                </h3>
+                                <h3>**</h3>
+                            </div>
+                            <div id="totalPayDiv">
+                                <h2>TOTAL</h2>
+                                <h2 id="totalDivPrice">Rs<span id="finalCartPrice"></span></h2>
+                            </div>
+
+                        </div>
+                        <div id="SavedDiv">
+                            <i class="fa-sharp fa-solid fa-piggy-bank fa-flip-horizontal pig"></i>
+                            <p>You Saved! <br> Rs <span id="saveAmount"></span></p>
+                        </div>
+                    </div>
+                    <div>
+                        <p id="cuponTotal">* For this order: 10% discount applied</p>
+                        <hr>
+                    </div>
+                    <div id="checkoutButtonDiv">
+                        <button id="checkout">CHECKOUT
+                            <i class="fa fa-arrow-alt-circle-right"></i>
+                        </button>
+                    </div>
+                    <p id="actDel">** Actual delivery charges computed at checkout time</p>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>   
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="top-footer">
+          <div>
+            <h4>bigbasket</h4>
+            <p>About Us</p>
+            <p>In News</p>
+            <p>Green bigbasket</p>
+            <p>Privacy Policy</p>
+            <p>Affiliate</p>
+            <p>Terms and Conditions</p>
+            <p>Careers At bigbasket</p>
+            <p>bb Instant</p>
+            <p>bb Daily</p>
+            <p>bb Blog</p>
+            <p>bbnow</p>
+          </div>
+          <div>
+            <h4>Help</h4>
+            <p>FAQs</p>
+            <p>Contact Us</p>
+            <p>bb Wallet FAQs</p>
+            <p>bb Wallet T&Cs</p>
+            <p>Vendor Connect</p>
+          </div>
+          <div>
+            <h4>Download Our App</h4>
+            <img
+              src="../header-footer/images/Google-App-store-icon.webp"
+              alt="google Play"
+            />
+            <img
+              src="../header-footer/images/Apple-App-store-icon.png"
+              alt="appstore"
+            />
+          </div>
+          <div>
+            <h4>Get Social With Us</h4>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+  
+        <div class="bottom-footer">
+          <div>
+            <div><h4>POPULAR CATEGORIES:</h4></div>
+            <div>
+              <p>
+                Sunflower Oils, Wheat Atta, Ghee, Milk, Health Drinks, Flakes,
+                Organic F&V, Namkeen, Eggs, Floor Cleaners, Other Juices, Leafy
+                Vegetables, Frozen Veg Food, Diapers & Wipes,
+              </p>
+            </div>
+          </div>
+          <div>
+            <div><h4>POPULAR BRANDS:</h4></div>
+            <div>
+              <p>
+                Amul, Nescafe , MTR, RED BULL , elite cake, Pediasure, Yummiez,
+                Yera, Yakult, Britannia, Wow Momo, Fortune , Haldirams , Ferrero,
+                Lays, Patanjali, McCain, kwality walls, Cadbury Dairy Milk,
+                Pedigree,
+              </p>
+            </div>
+          </div>
+          <div>
+            <div><h4>CITIES WE SERVE:</h4></div>
+            <div>
+              <p>
+                Bangalore, Hyderabad, Mumbai, Pune, Chennai, Delhi, Mysore,
+                Madurai, Coimbatore, Vijayawada-Guntur, Kolkata,
+                Ahmedabad-Gandhinagar, Nashik Business, Lucknow-Kanpur, Gurgaon,
+                Vadodara, Visakhapatnam, Surat, Nagpur, Patna, Indore, Chandigarh
+                Tricity, Jaipur, Bhopal, Noida-Ghaziabad, Kochi, Krishna District,
+                Bhubaneshwar-Cuttack, Guwahati, Renigunta, Hubli, Davanagere,
+                Trichy, Amravati, Raipur, Rajkot, Gwalior, Bareilly, Allahabad,
+                Hyderabad Rural, Bangalore Rural, Chennai Rural, Vizag Rural,
+                Lucknow Rural, Noida Rural, Ahmedabad Rural, Bhopal Rural,
+                Bhubaneswar Rural, Coimbatore Rural, Chandigarh Rural, Gurugram
+                Rural, Guwahati Rural, Indore Rural, Kochi Rural, Kolkata Rural,
+                Mumbai Rural, Mysore Rural, Nagpur Rural, Patna Rural, Pune Rural,
+                Surat Rural, Vadodara Rural, Jaipur Rural, Ranchi, Nashik, Agra,
+                Kozhikode,
+              </p>
+            </div>
+          </div>
+          <div>
+            <div><h4>PAYMENT OPTIONS:</h4></div>
+            <div>
+              <span>CASH ON DELIVERY</span>
+              <img
+                src="../header-footer/images/visa-and-mastercard-logo-26.png"
+                alt="visa"
+              />
+              <img
+                src="../header-footer/images/170-1703673_paytm-payment-bank-logo-png.png"
+                alt="paytm"
+              />
+              <img
+                src="../header-footer/images/MobiKwik-Logo-png.png"
+                alt="mobikwik"
+              />
+              <img src="../header-footer/images/RuPay.svg.png" alt="rupay" />
+            </div>
+          </div>
+        </div>
+        <div id="copyright">
+          <p>Copyright © 2022-2024 Supermarket Grocery Supplies Pvt Ltd</p>
+        </div>
+      </div>
+</body>
+<script src="cartPage.js"></script>
+
+</html>
+
+<!-- Header Footer -->
+<script
+  src="https://kit.fontawesome.com/8ed00984e1.js"
+  crossorigin="anonymous"
+></script>
+<script src="../header-footer/header.js"></script>

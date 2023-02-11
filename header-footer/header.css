@@ -1,0 +1,456 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#header{
+    display: flex;
+    /* display: none; */
+    flex-direction: column;
+}
+.upperTop{
+    display: flex;
+    /* border: 1px solid red; */
+    margin-right: 175px;
+    gap: 40px;
+    justify-content: right;
+    margin-top: 5px;
+    color: rgb(167, 157, 157);
+}
+.upperTop p:hover {
+    cursor: pointer;
+    color: rgb(132,194,37);
+}
+.upperTop i{
+    margin-right: 7px;
+}
+.loginBtn{
+    text-decoration: none;
+    color: rgb(167, 157, 157);
+}
+.loginBtn:hover{
+    color: rgb(132,194,37);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -8px;
+}
+nav img{
+    width: 46%;
+    margin-left: 26px;
+}
+nav input{
+    /* display: flex; */
+    width: 580px;
+    height: 33px;
+    /* margin-top: 31px; */
+    margin-left: -330px;
+    padding-left: 12px;
+    /* border: none; */
+    outline: none;
+}
+
+input[type="text"],
+a[type="submit"] {
+  height: 35px;
+}
+
+.searchbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 1px solid black;
+}
+/* form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+} */
+form.searchBar a{
+    width: 44px;
+    height: 35px;
+    /* position: absolute; */
+    margin: 0px 0 0 -5px;
+    padding: 7px 12px 10px 13px;
+    /* padding-top: 5px; */
+    border: none;
+    background: rgb(132,194,37);
+    color: white;
+    font-size: 17px;
+}
+form.searchBar a:hover{
+    cursor: pointer;
+    background-color: rgb(98, 162, 2);
+}
+nav .basket{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 16px;
+    width: 145px;
+    height: 65px;
+    background-color: rgb(242,242,242);
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+}
+nav .basket i{
+    font-size: 40px;
+    margin-top: 5px;
+    color: rgb(218,37,29);
+}
+
+.navBottom{
+    margin-left: 130px;
+}
+.navBottom > ul{
+    display: flex;
+    list-style: none;
+}
+.navBottom > ul > li > a:first-child{
+    display: flex;
+    align-items: center;
+    width: 263px;
+    height: 36px;
+    background-color: rgb(132,194,37);
+    color: white;
+    border: none;
+    text-align: left;
+    padding-left: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    justify-content: space-between;
+    cursor: pointer;
+    text-decoration: none;
+}
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 10px;
+    margin-bottom: 2px;
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.navBottom > ul > li i{
+    color: rgb(218,37,29);
+    font-size: 18px;
+    margin: 15px;
+}
+.navBottom > ul > li:last-child{
+    display: flex;
+    align-items: center;
+    width: 120px;
+    height: 36px;
+    margin-right: 10px;
+    color: rgb(218,37,29);
+    background-color: white;
+    font-weight: 400;
+    border: none;
+}
+.navBottom > ul > li:last-child:hover{
+    cursor: pointer;
+    color: white;
+    background-color: rgb(98, 162, 2);
+}
+
+.overlay{
+    width: 100%;
+    height: 100vh;
+    top: 0%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.212);
+    z-index: -1;
+    opacity: 0;
+    transition: 1s;
+}
+.showOverlay{
+    opacity: 1;
+    z-index: 1;
+}
+.loginform{
+    width: 25%;
+    background-color: white;
+    padding: 50px 35px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: -50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 1.2s;
+    z-index: 9;
+}
+.showLoginform{
+    top: 50%;
+}
+.loginform > form > p:first-child{
+    color: rgb(132,194,37);
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: -20px;
+}
+.loginform input{
+    display: flex;
+    width: 100%;
+    height: 35px;
+    margin: 90px 0 140px 0;
+    border: none;
+    border-bottom: 2px solid grey;
+    outline: none;
+    padding-left: 10px;
+}
+.loginform input:focus{
+    border: none;
+    border-bottom: 3px solid green;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.loginform div > button{
+    width: 100%;
+    height: 55px;
+    font-weight: 500;
+    font-size: 15px;
+    background-color: white;
+    color: rgb(70, 70, 70);
+    border: -3px solid rgb(53, 53, 53);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.loginform div > button:hover{
+    background-color: rgb(246, 226, 226);
+}
+.loginform > form > #button{
+    margin: 15px 0;
+    width: 100%;
+    height: 55px;
+    /* padding: 0 12rem; */
+    text-align: center;
+    background-color: rgb(132,194,37);
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.loginform > form > #button+p{
+    margin-bottom: -30px;
+    font-size: 10px;
+    color: rgb(139, 138, 138);
+}
+.loginform span{
+    position: absolute;
+    right: -12px;
+    top: -12px;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    font-size: 30px;
+    border-radius: 20px;
+    background-color: rgb(141, 138, 138);
+    color: white;
+    cursor: pointer;
+}
+
+
+                                /* footer section */
+
+.top-footer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 83%;
+    margin: auto;
+    /* border: 1px solid red; */
+    border-bottom: 1px solid rgb(212, 197, 197);
+    margin-top: 30px;
+}
+
+.top-footer > div > h4{
+    color: rgb(107, 165, 20);
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.top-footer > div > p{
+    color: rgb(52, 47, 47);
+    margin: 18px 0;
+}
+.top-footer > div > img{
+    margin: 0 0 8px 0;
+    cursor: pointer;
+}
+.top-footer > div > i{
+    font-size: 35px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.bottom-footer{
+    width: 83%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.bottom-footer > div > div{
+    margin: 20px 0;
+}
+.bottom-footer > div > div > h4{
+    width: 20%;
+    float: left;
+    color: rgb(107, 165, 20);
+    font-size: 18px;
+}
+.bottom-footer > div > div > p{
+    display: flex;
+    color: rgb(52, 47, 47);
+}
+.bottom-footer > div > div > span{
+    display: inline;
+    width: 44px;
+    font-size: 13px;
+    word-spacing: 5px;
+    float: left;
+    margin-right: 35px;
+}
+.bottom-footer > div > div > img{
+    display: inline;
+    width: 8%;
+}
+
+#copyright{
+    margin-top: 20px;
+    width: 100%;
+    padding: 15px 0;
+    background-color: rgb(234,234,234);
+}
+#copyright > p{
+    margin: auto;
+    width: 83%;
+    font-size: 14px;
+    word-spacing: 3px;
+}
+
+                                /* header 2 CSS */
+
+#header2{
+    /* display: flex; */
+    background-color: rgb(132,194,37);
+
+}
+
+#header2 > div:first-child{
+    display: flex;
+    font-size: 30px;
+    color: white;
+    padding-top: 10px;
+    justify-content: space-around;
+}
+#header2 > div > img{
+    width: 69px;
+    margin-top: -20px;
+}
+#header2 > div > input{
+    width: 90%;
+    height: 35px;
+    margin: auto;
+    margin: 5px;
+    margin-top: -20px;
+    padding-left: 12px;
+    outline: none;
+    border: none;
+}
+
+#header2 > div > button{
+    width: 44px;
+    height: 35px;
+    margin: 0px 0 0 -10px;
+    padding: 7px;
+    padding-top: 5px;
+    border: none;
+    background: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+
+
+
+     /* nav bar responsiveness */
+
+@media all and (max-width: 1275px){
+    #header{
+        margin: auto;
+        width: 100%;
+    }
+    nav input{
+        width: 480px;
+        margin-left: -230px;
+    }
+}
+
+@media all and (min-width: 300px) and (max-width:992px){
+    #header2{
+        width: 100%;
+        margin: auto;
+    }
+    #header2 > div > input{
+        width: 90%;
+    }
+    #header{
+        display: none;
+    }
+}
+@media all and (min-width: 991px){
+    #header2{
+        display: none;
+    }
+}
+
+@media all and (min-width: 250px) and (max-width:604px){
+    #header2{
+        width: 100%;
+        margin: auto;
+    }
+    #header2 > div > input, button{
+        width: 80%;
+        /* margin: auto; */
+    }
+    .bottom-footer > div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .bottom-footer > div > div > h4 ,p{
+        width: 100%;
+        margin: auto;
+    }
+    .bottom-footer > div > div > img{
+        display: inline;
+        width: 20%;
+    }
+}
+
+@media all and (max-width: 992px){
+    .top-footer{
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    .bottom-footer{
+        width: 100%;
+    }
+}
