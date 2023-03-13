@@ -15,6 +15,6 @@ Website is hosted on Netlify
 
 ## Tech Stack
 
-**Client:** Html 5, CSS 3, JavaScript, Local Storage
+**Client:** Html 5, CSS 3, JavaScript, LocalStorage
 
 
